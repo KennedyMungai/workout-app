@@ -1,3 +1,4 @@
+import { NativeStackHeaderProps } from "@react-navigation/native-stack";
 import { useEffect } from "react";
 import { Text, View, Button } from "react-native";
 
