@@ -6,7 +6,7 @@ export default function HomeScreen()
     return (
         <View>
             <Text>I am HomeScreen</Text>
-            <Button title="Go to Planner"></Button>
+            <Button title="Go to Planner" />
         </View>
     );
 };
