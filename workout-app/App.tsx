@@ -6,9 +6,9 @@ import Navigation from './navigation';
 export default function App()
 {
   return (
-    <View>
+    <>
       <Navigation />
       <StatusBar style="auto" />
-    </View>
+    </>
   );
 }
