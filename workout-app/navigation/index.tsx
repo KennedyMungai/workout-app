@@ -13,9 +13,11 @@ export default function Navigation()
         <Stack.Navigator>
             <Stack.Screen
                 name="Home"
+                component={HomeScreen}
             />
             <Stack.Screen
                 name="Planner"
+                component={PlannerScreen}
             />
         </Stack.Navigator>
     </NavigationContainer>
