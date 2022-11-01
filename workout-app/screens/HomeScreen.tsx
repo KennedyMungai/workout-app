@@ -6,7 +6,7 @@ export default function HomeScreen({ navigation })
     return (
         <View>
             <Text>I am HomeScreen</Text>
-            <Button title="Go to Planner" onPress={() => navigation.push("Planner")} />
+            <Button title="Go to Planner" onPress={() => navigation.navigate("Planner")} />
         </View>
     );
 };
