@@ -10,6 +10,13 @@ const Stack = createNativeStackNavigator();
 export default function Navigation()
 {
     <NavigationContainer>
-
+        <Stack.Navigator>
+            <Stack.Screen
+                name="Home"
+            />
+            <Stack.Screen
+                name="Planner"
+            />
+        </Stack.Navigator>
     </NavigationContainer>
 };
