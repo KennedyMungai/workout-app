@@ -9,6 +9,7 @@ export default function App()
   return (
     <View>
       {/* <HomeScreen /> */}
+      <PlannerScreen />
       <StatusBar style="auto" />
     </View>
   );
