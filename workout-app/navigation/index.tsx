@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../screens/HomeScreen";
 import PlannerScreen from "../screens/PlannerScreen";
+import TestScreen from '../screens/TestScreen';
 
 
 export default function Navigation()
@@ -22,7 +23,7 @@ function RootNavigator()
     return (
         <Stack.Navigator>
             <Stack.Screen name="Root" component={BottomTabNavigator} />
-            <Stack.Screen name="Planner" component={PlannerScreen} />
+            <Stack.Screen name="Test" component={TestScreen} />
         </Stack.Navigator>
     );
 };
