@@ -8,15 +8,13 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
     useEffect(() =>
     {
         console.log("Rendering the Home screen");
-
-        return () => console.log("Unmounting Home Screen");
     }, []);
 
 
     return (
         <View>
             <Text>I am HomeScreen</Text>
-            <Button title="Go to Planner" onPress={() => navigation.push("Test")} />
+            <Button title="Go to Planner" onPress={() => navigation.push("Planner")} />
         </View>
     );
 };

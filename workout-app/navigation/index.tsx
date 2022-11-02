@@ -23,7 +23,6 @@ function RootNavigator()
     return (
         <Stack.Navigator>
             <Stack.Screen name="Root" component={BottomTabNavigator} />
-            <Stack.Screen name="Test" component={TestScreen} />
         </Stack.Navigator>
     );
 };

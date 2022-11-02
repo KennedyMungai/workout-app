@@ -8,15 +8,13 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
     useEffect(() =>
     {
         console.log("Rendering the planner screen")
-
-        return () => console.log("Unmounting the Planner Screen");
     }, []);
 
 
     return (
         <View>
             <Text>I am PlannerScreen</Text>
-            <Button title="Go to Test" onPress={() => navigation.push("Test")} />
+            <Button title="Go to Home" onPress={() => navigation.push("Home")} />
         </View>
     );
 };
