@@ -5,6 +5,15 @@ import data from '../data.json';
 
 export default function HomeScreen({ navigation }: NativeStackHeaderProps)
 {
+    const renderItem = ({ item }) =>
+    (
+        <View>
+            <Text>
+                {item.name}
+            </Text>
+        </View>
+    );
+
     return (
         <View style={styles.container}>
             {/* <Text>I am HomeScreen</Text> */}
@@ -12,13 +21,7 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
             <FlatList
                 data={data}
                 keyExtractor={item => item.slug}
-                renderItem={({ item }) =>
-                    <View>
-                        <Text>
-                            {item.name}
-                        </Text>
-                    </View>
-                }
+                renderItem={renderItem}
             />
         </View>
     );
