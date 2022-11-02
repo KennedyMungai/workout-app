@@ -18,3 +18,8 @@ export default function Navigation()
 
 
 const Stack = createNativeStackNavigator();
+
+const RootNavigator = () =>
+{
+
+};
