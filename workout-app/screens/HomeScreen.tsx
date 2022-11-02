@@ -5,7 +5,7 @@ import data from '../data.json';
 
 export default function HomeScreen({ navigation }: NativeStackHeaderProps)
 {
-    const renderItem = ({ item }) =>
+    const renderItem = ({ item }: { item: any }) =>
     (
         <View>
             <Text>
