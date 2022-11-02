@@ -38,7 +38,7 @@ function BottomTabNavigator()
                 name="Home"
                 component={HomeScreen}
                 options={{
-                    tabBarIcon: () => <Text>Home Icon</Text>
+                    tabBarIcon: () => <Feather name="home" size={14} color="black" />
                 }}
             />
             <BottomTab.Screen
