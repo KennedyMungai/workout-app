@@ -37,14 +37,14 @@ function BottomTabNavigator()
                 name="Home"
                 component={HomeScreen}
                 options={{
-                    tabBarIcon: () => <FontAwesome name="home" size={24} color="black" />
+                    tabBarIcon: ({ color, size }) => <FontAwesome name="home" size={size} color={color} />
                 }}
             />
             <BottomTab.Screen
                 name="Planner"
                 component={PlannerScreen}
                 options={{
-                    tabBarIcon: () => <FontAwesome name="list" size={24} color="black" />
+                    tabBarIcon: ({ color, size }) => <FontAwesome name="list" size={size} color={color} />
                 }}
             />
         </BottomTab.Navigator>
