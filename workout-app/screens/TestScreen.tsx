@@ -1,11 +1,22 @@
-import React from 'react';
+import { Text, View, Button } from "react-native";
+import { NativeStackHeaderProps } from '@react-navigation/native-stack';
+import { useEffect } from "react";
 
 
-const TestScreen = () =>
+export default function TestScreen({ navigation }: NativeStackHeaderProps)
 {
-    return (
-    
-    )
-};
+    useEffect(() =>
+    {
+        console.log("Rendering the planner screen");
 
-export default TestScreen;
+        return () => console.log("Unmounting Test Screen");
+    }, []);
+
+
+    return (
+        <View>
+            <Text>I am HomeScreen</Text>
+            <Button title="Go to Planner" onPress={() => navigation.navigate("Planner")} />
+        </View>
+    );
+};
