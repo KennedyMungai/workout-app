@@ -16,7 +16,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
     return (
         <View>
             <Text>I am PlannerScreen</Text>
-            <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
+            <Button title="Go to Test" onPress={() => navigation.push("Test")} />
         </View>
     );
 };
