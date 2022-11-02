@@ -20,7 +20,7 @@ const Stack = createNativeStackNavigator();
 function RootNavigator()
 {
     return (
-        <Stack.Navigator initialRouteName="Home">
+        <Stack.Navigator>
             <Stack.Screen name="Home" component={HomeScreen} />
             <Stack.Screen name="Planner" component={PlannerScreen} />
         </Stack.Navigator>
