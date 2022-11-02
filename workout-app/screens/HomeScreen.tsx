@@ -6,7 +6,7 @@ import data from '../data.json';
 export default function HomeScreen({ navigation }: NativeStackHeaderProps)
 {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>I am HomeScreen</Text>
             <Text>{JSON.stringify(data)}</Text>
         </View>
