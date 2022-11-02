@@ -26,3 +26,5 @@ function RootNavigator()
         </Stack.Navigator>
     );
 };
+
+const bottomTab = createBottomTabNavigator();
