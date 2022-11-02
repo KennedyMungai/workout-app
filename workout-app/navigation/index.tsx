@@ -37,14 +37,17 @@ function BottomTabNavigator()
             <BottomTab.Screen
                 name="Home"
                 component={HomeScreen}
-                options={{ tabBarIcon: () => <Text>Home Icon</Text> }}
+                options={{
+                    tabBarIcon: () => <Text>Home Icon</Text>
+                }}
             />
             <BottomTab.Screen
                 name="Planner"
                 component={PlannerScreen}
                 options={{
                     tabBarIcon: () => <Feather name="home" size={14} color="black" />
-                }} />
+                }}
+            />
         </BottomTab.Navigator>
     );
 };
