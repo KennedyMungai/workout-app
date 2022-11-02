@@ -45,7 +45,7 @@ function BottomTabNavigator()
                 name="Planner"
                 component={PlannerScreen}
                 options={{
-                    tabBarIcon: () => << FontAwesome name="Planner" size={ 24} color="black" />>
+                    tabBarIcon: () => <Text>Planner</Text>
                 }}
             />
         </BottomTab.Navigator>
