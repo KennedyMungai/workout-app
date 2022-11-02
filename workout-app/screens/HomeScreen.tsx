@@ -9,7 +9,7 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
     (
         <View>
             <Text>
-                {item.name}
+                <Text>{item.name}</Text> - <Text>{item.difficulty}</Text>
             </Text>
         </View>
     );
