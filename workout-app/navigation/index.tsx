@@ -8,7 +8,7 @@ export default function Navigation()
 {
     return (
         <NavigationContainer>
-
+            <RootNavigator />
         </NavigationContainer>
     );
 }
@@ -16,7 +16,7 @@ export default function Navigation()
 
 const Stack = createNativeStackNavigator();
 
-const RootNavigator = () =>
+function RootNavigator()
 {
     <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
