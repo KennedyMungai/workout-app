@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, FlatList } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 import data from '../data.json';
 
