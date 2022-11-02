@@ -8,6 +8,7 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
     return (
         <View>
             <Text>I am HomeScreen</Text>
+            <Text>{JSON.stringify(data)}</Text>
         </View>
     );
 };
