@@ -12,3 +12,10 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
         </View>
     );
 };
+
+
+const styles = StyleSheet.create({
+    container: {
+        padding: 20
+    }
+});
