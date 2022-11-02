@@ -33,8 +33,8 @@ function BottomTabNavigator()
 {
     return (
         <BottomTab.Navigator initialRouteName="Home">
-            <BottomTab.Screen name="Home" component={HomeScreen} options={{ tabBarIcon: () => <Text>Home</Text> }} />
-            <BottomTab.Screen name="Planner" component={PlannerScreen} options={{ tabBarIcon: () => <Text>Planner</Text> }} />
+            <BottomTab.Screen name="Home" component={HomeScreen} options={{ tabBarIcon: () => <Text>Home Icon</Text> }} />
+            <BottomTab.Screen name="Planner" component={PlannerScreen} options={{ tabBarIcon: () => <Text>Planner Icon</Text> }} />
         </BottomTab.Navigator>
     );
 };
