@@ -7,7 +7,7 @@ export default function TestScreen({ navigation }: NativeStackHeaderProps)
 {
     useEffect(() =>
     {
-        console.log("Rendering the planner screen");
+        console.log("Rendering the Test screen");
 
         return () => console.log("Unmounting Test Screen");
     }, []);
