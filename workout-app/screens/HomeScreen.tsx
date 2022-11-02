@@ -7,7 +7,7 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
 {
     return (
         <View style={styles.container}>
-            <Text>I am HomeScreen</Text>
+            {/* <Text>I am HomeScreen</Text> */}
             {/* <Text>{JSON.stringify(data)}</Text> */}
             <FlatList
                 data={data}
