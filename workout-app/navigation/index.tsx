@@ -34,7 +34,7 @@ function BottomTabNavigator()
     return (
         <BottomTab.Navigator initialRouteName="Home">
             <BottomTab.Screen name="Home" component={HomeScreen} options={{ tabBarIcon: () => <Text>Home</Text> }} />
-            <BottomTab.Screen name="Planner" component={PlannerScreen} />
+            <BottomTab.Screen name="Planner" component={PlannerScreen} options={{ tabBarIcon: () => <Text>Planner</Text> }} />
         </BottomTab.Navigator>
     );
 };
