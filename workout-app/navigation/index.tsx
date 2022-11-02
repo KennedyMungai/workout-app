@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../screens/HomeScreen";
 import PlannerScreen from "../screens/PlannerScreen";
 import { Text } from 'react-native';
-import { Feather } from "@expo/vector-icons";
+import { FontAwesome } from "@expo/vector-icons";
 
 
 export default function Navigation()
@@ -38,14 +38,14 @@ function BottomTabNavigator()
                 name="Home"
                 component={HomeScreen}
                 options={{
-                    tabBarIcon: () => <Feather name="home" size={14} color="black" />
+                    tabBarIcon: () => <FontAwesome name="home" size={24} color="black" />
                 }}
             />
             <BottomTab.Screen
                 name="Planner"
                 component={PlannerScreen}
                 options={{
-                    tabBarIcon: () => <Feather name="home" size={14} color="black" />
+                    tabBarIcon: () => << FontAwesome name="Planner" size={ 24} color="black" />>
                 }}
             />
         </BottomTab.Navigator>
