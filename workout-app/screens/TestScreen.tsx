@@ -16,7 +16,7 @@ export default function TestScreen({ navigation }: NativeStackHeaderProps)
     return (
         <View>
             <Text>I am HomeScreen</Text>
-            <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
+            <Button title="Go to Home" onPress={() => navigation.push("Home")} />
         </View>
     );
 };
