@@ -21,7 +21,7 @@ function RootNavigator()
 {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Home" component={HomeScreen} />
+            <Stack.Screen name="Root" component={HomeScreen} />
             <Stack.Screen name="Planner" component={PlannerScreen} />
         </Stack.Navigator>
     );
