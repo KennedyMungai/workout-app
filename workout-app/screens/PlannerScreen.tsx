@@ -7,7 +7,9 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 {
     useEffect(() =>
     {
-        console.log("Rendering the planner screen")
+        console.log("Rendering the planner screen");
+
+        return () => console.log("Unmounting the planner screen");
     }, []);
 
 
