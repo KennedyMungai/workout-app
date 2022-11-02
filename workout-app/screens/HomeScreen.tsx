@@ -1,4 +1,4 @@
-import { Text, View, Button } from "react-native";
+import { Text, View } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 
 
