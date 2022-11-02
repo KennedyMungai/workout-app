@@ -1,5 +1,6 @@
 import { Text, View } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
+import data from '../data.json';
 
 
 export default function HomeScreen({ navigation }: NativeStackHeaderProps)
