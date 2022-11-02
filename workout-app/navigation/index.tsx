@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../screens/HomeScreen";
 import PlannerScreen from "../screens/PlannerScreen";
 import TestScreen from '../screens/TestScreen';
+import { Text } from 'react-native';
 
 
 export default function Navigation()
@@ -33,7 +34,7 @@ function BottomTabNavigator()
 {
     return (
         <BottomTab.Navigator initialRouteName="Home">
-            <BottomTab.Screen name="Home" component={HomeScreen} />
+            <BottomTab.Screen name="Home" component={HomeScreen} options={{ tabBarIcon: () => <Text>Home</Text> }} />
             <BottomTab.Screen name="Planner" component={PlannerScreen} />
         </BottomTab.Navigator>
     );
