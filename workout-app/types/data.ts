@@ -4,5 +4,6 @@ export interface WorkOut {
     slug: string,
     name: string,
     duration: number, 
-    difficulty: Difficulty
+    difficulty: Difficulty,
+    sequence: Array<>
 }
