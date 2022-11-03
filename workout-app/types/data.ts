@@ -1,3 +1,5 @@
+export type difficulty = "easy" | "normal" | "hard";
+
 export interface WorkOut {
     slug: string,
     name: string,
