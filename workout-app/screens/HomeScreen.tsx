@@ -7,17 +7,12 @@ import WorkoutItem from "../components/WorkoutItem";
 
 export default function HomeScreen({ navigation }: NativeStackHeaderProps)
 {
-    const renderItem = ({ item }: { item: WorkOut }) =>
-    (
-        <WorkoutItem item={item} />
-    );
-
     return (
         <View style={styles.container}>
             <FlatList
                 data={data as WorkOut[]}
                 keyExtractor={item => item.slug}
-                renderItem={renderItem}
+                renderItem={WorkoutItem}
             />
         </View>
     );
