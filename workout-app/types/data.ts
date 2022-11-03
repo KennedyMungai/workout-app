@@ -14,5 +14,5 @@ export interface WorkOut {
     name: string,
     duration: number, 
     difficulty: Difficulty,
-    sequence: Array<>
+    sequence: Array<SequenceItem>
 }
