@@ -18,7 +18,7 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
             {/* <Text>I am HomeScreen</Text> */}
             {/* <Text>{JSON.stringify(data)}</Text> */}
             <FlatList
-                data={data as Array<WorkOut>}
+                data={data as WorkOut[]}
                 keyExtractor={item => item.slug}
                 renderItem={renderItem}
             />
