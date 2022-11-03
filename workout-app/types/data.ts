@@ -4,7 +4,8 @@ export type SequenceType = "exercise" | "break" | "stretch";
 export interface SequenceItem {
     slug: string,
     name: string,
-    type: SequenceType
+    type: SequenceType,
+    reps?: number,
     duration: number,
 }
 
