@@ -1,9 +1,10 @@
 export type Difficulty = "easy" | "normal" | "hard";
+export type SequenceType = "exercise" | "break" | "stretch";
 
 export interface SequenceItem {
     slug: string,
     name: string,
-    type: "exercise" | "break" | "stretch",
+    type: SequenceType
     duration: number,
 }
 
