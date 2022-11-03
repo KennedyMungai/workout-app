@@ -8,9 +8,7 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
     const renderItem = ({ item }: { item: any }) =>
     (
         <View>
-            <Text>
-                <Text>{item.name}</Text> - <Text>{item.difficulty}</Text>
-            </Text>
+            <Text>{item.name} - {item.difficulty}</Text>
         </View>
     );
 
