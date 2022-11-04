@@ -2,11 +2,11 @@ import React from 'react';
 import { Text } from 'react-native';
 
 
-const MontserratText = ({ }) =>
+const MontserratText = ({ children }: { children: any }) =>
 {
     return (
         <Text style={{ fontFamily: "montserrat" }}>
-
+            {children}
         </Text>
     )
 }
