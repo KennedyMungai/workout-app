@@ -7,13 +7,10 @@ const useCachedResources = () =>
 
     useEffect(() =>
     {
-        console.log("The useEffect hook executed");
-
         const loadResourcesAndDataAsync = () =>
         {
             setTimeout(() =>
             {
-                console.log("Setting isLoaded to true");
                 setisLoadingComplete(true);
             }, 3000);
         };
@@ -21,7 +18,6 @@ const useCachedResources = () =>
         loadResourcesAndDataAsync();
     }, [isLoadingComplete]);
 
-    console.log("Returning: " + isLoadingComplete);
     return isLoadingComplete;
 }
 
