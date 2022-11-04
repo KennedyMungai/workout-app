@@ -10,7 +10,13 @@ const useCachedResources = () =>
     {
         const loadResourcesAndDataAsync = () =>
         {
+            try
+            {
 
+            } catch (error)
+            {
+                console.warn(error);
+            }
         };
 
         loadResourcesAndDataAsync();
