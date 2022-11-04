@@ -13,7 +13,12 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
             <FlatList
                 data={data as WorkOut[]}
                 keyExtractor={item => item.slug}
-                renderItem={WorkoutItem}
+                renderItem={() =>
+                {
+                    return (
+                        <WorkoutItem />
+                    )
+                }}
             />
         </View>
     );
