@@ -13,6 +13,7 @@ const useCachedResources = () =>
         {
             setTimeout(() =>
             {
+                console.log("Setting isLoaded to true");
                 setisLoadingComplete(true);
             }, 3000);
         };
