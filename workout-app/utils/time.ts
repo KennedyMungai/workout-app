@@ -14,4 +14,6 @@ export const formatSec = (sec: number): string =>
     const minText = `${_min} mins`;
     const secText = `${_sec} seconds`;
     const connector = "and";
+
+    return `${minText} ${connector} ${secText}`
 };
