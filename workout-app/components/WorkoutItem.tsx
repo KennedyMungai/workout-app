@@ -7,9 +7,9 @@ const WorkoutItem = ({ item }: { item: WorkOut }) =>
 {
     return (
         <View style={styles.container}>
-            <Text>Name: {item.name}</Text>
-            <Text>Duration: {item.duration}</Text>
-            <Text>Difficulty: {item.difficulty}</Text>
+            <Text style={styles.name}>Name: {item.name}</Text>
+            <Text style={styles.duration}>Duration: {item.duration}</Text>
+            <Text style={styles.difficulty}>Difficulty: {item.difficulty}</Text>
         </View>
     )
 }
