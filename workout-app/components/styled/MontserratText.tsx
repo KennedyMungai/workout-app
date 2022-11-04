@@ -7,7 +7,7 @@ const MontserratText = (props: Text["props"]) =>
     return (
         <Text
             {...props}
-            style={{ fontFamily: "montserrat" }}
+            style={[props.style, { fontFamily: "montserrat" }]}
         />
     )
 }
