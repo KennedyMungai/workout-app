@@ -18,7 +18,7 @@ const useCachedResources = () =>
         loadResourcesAndDataAsync();
     }, [isLoadingComplete]);
 
-
+    console.log("Returning: " + isLoadingComplete);
     return isLoadingComplete;
 }
 
