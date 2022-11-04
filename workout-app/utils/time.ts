@@ -22,6 +22,11 @@ export const formatSec = (sec: number): string =>
         sentence.push(minText);
     }
 
+    if (_min > 0 && _sec > 0)
+    {
+        sentence.push(connector);
+    }
+
     if (sec > 0)
     {
         sentence.push(secText);
