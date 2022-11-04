@@ -24,5 +24,10 @@ const styles = StyleSheet.create({
     container: {
         padding: 20,
         flex: 1
+    },
+    header: {
+        fontSize: 20,
+        marginBottom: 20,
+        fontWeight: "bold"
     }
 });
