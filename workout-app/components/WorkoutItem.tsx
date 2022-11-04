@@ -6,7 +6,7 @@ import { WorkOut } from '../types/data';
 const WorkoutItem = ({ item }: { item: WorkOut }) =>
 {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Name: {item.name}</Text>
             <Text>Duration: {item.duration}</Text>
             <Text>Difficulty: {item.difficulty}</Text>
