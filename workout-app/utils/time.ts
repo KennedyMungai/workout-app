@@ -21,4 +21,9 @@ export const formatSec = (sec: number): string =>
     {
         sentence.push(minText);
     }
+
+    if (sec > 0)
+    {
+        sentence.push(secText);
+    }
 };
