@@ -9,7 +9,10 @@ const useCachedResources = () =>
     {
         const loadResourcesAndDataAsync = () =>
         {
-            setTimeout(() => { }, 3000);
+            setTimeout(() =>
+            {
+                setisLoadingComplete(true);
+            }, 3000);
         };
 
         loadResourcesAndDataAsync();
