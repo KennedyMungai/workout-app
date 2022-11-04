@@ -31,4 +31,6 @@ export const formatSec = (sec: number): string =>
     {
         sentence.push(secText);
     }
+
+    return sentence.join(" ");
 };
