@@ -17,7 +17,9 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
                 {
                     return (
                         <Pressable>
-                            <WorkoutItem item={item} />
+                            <WorkoutItem
+                                item={item}
+                            />
                         </Pressable>
                     )
                 }}
