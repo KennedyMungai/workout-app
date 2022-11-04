@@ -31,9 +31,9 @@ const styles = StyleSheet.create({
         marginBottom: 5,
     },
     duration: {
-
+        fontSize: 15,
     },
     difficulty: {
-
+        fontSize: 15,
     }
 });
