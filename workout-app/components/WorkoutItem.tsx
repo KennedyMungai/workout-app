@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { WorkOut, Difficulty } from '../types/data';
 
 
@@ -15,3 +15,19 @@ const WorkoutItem = ({ item }: { item: WorkOut }) =>
 }
 
 export default WorkoutItem;
+
+
+const styles = StyleSheet.create({
+    container: {
+
+    },
+    name: {
+
+    },
+    duration: {
+
+    },
+    difficulty: {
+
+    }
+});
