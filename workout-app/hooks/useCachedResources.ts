@@ -7,6 +7,8 @@ const useCachedResources = () =>
 
     useEffect(() =>
     {
+        console.log("The useEffect hook executed");
+
         const loadResourcesAndDataAsync = () =>
         {
             setTimeout(() =>
