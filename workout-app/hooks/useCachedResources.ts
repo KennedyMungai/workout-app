@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import * as Font from "expo-font";
 
 
 const useCachedResources = () =>
