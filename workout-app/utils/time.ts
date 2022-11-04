@@ -11,5 +11,5 @@ export const formatSec = (sec: number): string =>
     const _min = Math.floor(sec / 60);
     const _sec = sec % 60;
 
-    return `${_min} minutes { _sec } seconds`;
+    const minText = `${_min} min`;
 };
