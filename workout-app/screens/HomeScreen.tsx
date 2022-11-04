@@ -3,7 +3,6 @@ import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 import data from '../data.json';
 import { WorkOut } from "../types/data";
 import WorkoutItem from "../components/WorkoutItem";
-import MontserratText from "../components/styled/MontserratText";
 
 
 export default function HomeScreen({ navigation }: NativeStackHeaderProps)
