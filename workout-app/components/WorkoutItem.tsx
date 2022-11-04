@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { WorkOut, Difficulty } from '../types/data';
+import { WorkOut } from '../types/data';
 
 
 const WorkoutItem = ({ item }: { item: WorkOut }) =>
