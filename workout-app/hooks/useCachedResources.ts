@@ -7,8 +7,13 @@ const useCachedResources = () =>
 
     useEffect(() =>
     {
+        const loadResourcesAndDataAsync = () =>
+        {
 
-    }, [isLoadingComplete])
+        };
+
+        loadResourcesAndDataAsync();
+    }, [isLoadingComplete]);
 
 
     return isLoadingComplete;
