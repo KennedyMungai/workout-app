@@ -16,7 +16,9 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
                 renderItem={({ item }) =>
                 {
                     return (
-                        <Pressable>
+                        <Pressable
+                            onPress={() => alert(`I am pressed - ${item.name}`)}
+                        >
                             <WorkoutItem
                                 item={item}
                             />
