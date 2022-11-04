@@ -16,4 +16,9 @@ export const formatSec = (sec: number): string =>
     const connector = "and";
 
     const sentence: string[] = [];
+
+    if (_min > 0)
+    {
+        sentence.push(minText);
+    }
 };
