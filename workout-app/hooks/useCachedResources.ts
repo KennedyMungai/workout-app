@@ -26,7 +26,7 @@ const useCachedResources = () =>
         };
 
         loadResourcesAndDataAsync();
-    }, [isLoadingComplete]);
+    }, []);
 
     return isLoadingComplete;
 }
