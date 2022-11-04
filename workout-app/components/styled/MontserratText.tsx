@@ -2,10 +2,12 @@ import React from 'react';
 import { Text } from 'react-native';
 
 
-const MontserratText = () =>
+const MontserratText = ({ }) =>
 {
     return (
+        <Text style={{ fontFamily: "montserrat" }}>
 
+        </Text>
     )
 }
 
