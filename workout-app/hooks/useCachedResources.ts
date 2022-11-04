@@ -5,6 +5,11 @@ const useCachedResources = () =>
 {
     const [isLoadingComplete, setisLoadingComplete] = useState<boolean>(false);
 
+    useEffect(() =>
+    {
+
+    }, [isLoadingComplete])
+
 
     return isLoadingComplete;
 }
