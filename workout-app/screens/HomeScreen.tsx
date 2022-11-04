@@ -9,6 +9,7 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
 {
     return (
         <View style={styles.container}>
+            <Text>New Workouts</Text>
             <FlatList
                 data={data as WorkOut[]}
                 keyExtractor={item => item.slug}
