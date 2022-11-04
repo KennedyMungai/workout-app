@@ -8,11 +8,11 @@ const useCachedResources = () =>
 
     useEffect(() =>
     {
-        const loadResourcesAndDataAsync = () =>
+        const loadResourcesAndDataAsync = async () =>
         {
             try
             {
-                Font.loadAsync({
+                await Font.loadAsync({
                     "montserrat": require("../assets/fonts/Montserrat-Regular.ttf"),
                     "montserrat-bold": require("../assets/fonts/Montserrat-Bold.ttf"),
                 })
