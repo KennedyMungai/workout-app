@@ -19,6 +19,9 @@ const useCachedResources = () =>
             } catch (error)
             {
                 console.warn(error);
+            } finally
+            {
+                setisLoadingComplete(true);
             }
         };
 
