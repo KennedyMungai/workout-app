@@ -4,18 +4,6 @@ import data from '../data.json';
 import { WorkOut } from "../types/data";
 import WorkoutItem from "../components/WorkoutItem";
 
-const PressableItem = ({ item }: { item: WorkOut }) =>
-{
-    return (
-        <Pressable
-            onPress={() => alert(`I am pressed - ${item.name}`)}
-        >
-            <WorkoutItem
-                item={item}
-            />
-        </Pressable>
-    );
-}
 
 export default function HomeScreen({ navigation }: NativeStackHeaderProps)
 {
@@ -25,7 +13,18 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
             <FlatList
                 data={data as WorkOut[]}
                 keyExtractor={item => item.slug}
-                renderItem={PressableItem}
+                renderItem={({ item }) =>
+                {
+                    return (
+                        <Pressable
+                            onPress={() => alert(`I am pressed - ${item.name}`)}
+                        >
+                            <WorkoutItem
+                                item={item}
+                            />
+                        </Pressable>
+                    )
+                }}
             />
         </View>
     );
