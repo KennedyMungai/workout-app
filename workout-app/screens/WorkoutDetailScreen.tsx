@@ -2,6 +2,14 @@ import { View, StyleSheet, FlatList, Text, Pressable } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 
 
+type DetailParams = {
+    route: {
+        params: {
+            slug: string
+        }
+    }
+};
+
 export default function WorkoutDetailScreen({ route }: NativeStackHeaderProps)
 {
     return (
