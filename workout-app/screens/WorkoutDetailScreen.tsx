@@ -5,7 +5,7 @@ import { WorkOut } from "../types/data";
 import WorkoutItem from "../components/WorkoutItem";
 
 
-export default function HomeScreen({ navigation }: NativeStackHeaderProps)
+export default function WorkoutDetail({ navigation }: NativeStackHeaderProps)
 {
     return (
         <View style={styles.container}>
