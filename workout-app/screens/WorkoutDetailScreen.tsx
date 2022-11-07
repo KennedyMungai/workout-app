@@ -2,7 +2,7 @@ import { View, StyleSheet, FlatList, Text, Pressable } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 
 
-export default function WorkoutDetailScreen({ navigation, route }: NativeStackHeaderProps)
+export default function WorkoutDetailScreen({ route }: NativeStackHeaderProps)
 {
     return (
         <View style={styles.container}>
