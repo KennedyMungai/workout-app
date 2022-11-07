@@ -9,7 +9,7 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
 {
     return (
         <View style={styles.container}>
-            <Text style={styles.header}>New Workouts</Text>
+            <Text style={styles.header}>Workout Details</Text>
         </View>
     );
 };
