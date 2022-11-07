@@ -10,7 +10,7 @@ type DetailParams = {
     }
 };
 
-export default function WorkoutDetailScreen({ route }: NativeStackHeaderProps)
+export default function WorkoutDetailScreen({ route }: NativeStackHeaderProps & DetailParams)
 {
     return (
         <View style={styles.container}>
