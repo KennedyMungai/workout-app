@@ -17,7 +17,9 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
                 {
                     return (
                         <Pressable
-                            onPress={() => navigation.navigate("WorkoutDetail")}
+                            onPress={() =>
+                                navigation.navigate("WorkoutDetail", { slug: item.slug })
+                            }
                         >
                             <WorkoutItem
                                 item={item}
