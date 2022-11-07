@@ -6,7 +6,7 @@ export default function WorkoutDetailScreen({ route }: NativeStackHeaderProps)
 {
     return (
         <View style={styles.container}>
-            <Text style={styles.header}>Slug - {route.params.slug}</Text>
+            <Text style={styles.header}>Slug - {(route.params as any).slug}</Text>
         </View>
     );
 };
