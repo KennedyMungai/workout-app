@@ -10,22 +10,6 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
     return (
         <View style={styles.container}>
             <Text style={styles.header}>New Workouts</Text>
-            <FlatList
-                data={data as WorkOut[]}
-                keyExtractor={item => item.slug}
-                renderItem={({ item }) =>
-                {
-                    return (
-                        <Pressable
-                            onPress={() => alert(`I am pressed - ${item.name}`)}
-                        >
-                            <WorkoutItem
-                                item={item}
-                            />
-                        </Pressable>
-                    )
-                }}
-            />
         </View>
     );
 };
