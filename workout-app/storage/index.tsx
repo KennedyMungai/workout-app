@@ -7,7 +7,7 @@ export const storeData = async () =>
 
 };
 
-export const getData = () =>
+export const getData = async () =>
 {
 
 };
