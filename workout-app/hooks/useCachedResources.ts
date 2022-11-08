@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import * as Font from "expo-font";
-import { storeData } from '../storage';
+import { getData, storeData } from '../storage';
 import data from "../data.json";
 
 
@@ -25,6 +25,7 @@ const useCachedResources = () =>
                 console.warn(error);
             } finally
             {
+                const workouts = await getData("workout-data");
                 setisLoadingComplete(true);
             }
         };
