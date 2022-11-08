@@ -14,7 +14,7 @@ export const storeData = async (key: string, value: any) =>
     }
 };
 
-export const getData = async () =>
+export const getData = async (key: string) =>
 {
 
 };
