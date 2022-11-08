@@ -7,7 +7,7 @@ export const storeData = async () =>
     try
     {
 
-    } catch (e)
+    } catch (e: any)
     {
         console.log(e);
     }
