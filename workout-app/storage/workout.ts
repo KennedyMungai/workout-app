@@ -2,7 +2,7 @@ import { containsKey, storeData } from ".";
 import data from '../data.json';
 
 
-export const getWorkouts = () =>
+export const getWorkouts = async () =>
 {
 
 };
