@@ -10,7 +10,7 @@ export const storeData = async (key: string, value: any) =>
         await AsyncStorage.setItem(key, stringValue);
     } catch (e: any)
     {
-        console.log(e);
+        console.log(e.message);
     }
 };
 
@@ -19,8 +19,8 @@ export const getData = async (key: string) =>
     try
     {
 
-    } catch (e)
+    } catch (e: any)
     {
-
+        console.log(e.message);
     }
 };
