@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import * as Font from "expo-font";
-import { getData, storeData } from '../storage';
+import { getData, storeData, containsKey } from '../storage';
 import data from "../data.json";
 
 
