@@ -18,6 +18,7 @@ const useCachedResources = () =>
 
                 if (!hasWorkouts)
                 {
+                    console.log("Storing the data");
                     await storeData("workout-data", data);
                 }
 
