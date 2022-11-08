@@ -42,3 +42,8 @@ export const containsKey = async (key: string) =>
         console.error(e.message);
     }
 };
+
+export const removeItem = async () =>
+{
+
+};
