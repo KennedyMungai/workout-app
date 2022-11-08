@@ -25,7 +25,7 @@ const useCachedResources = () =>
                 console.warn(error);
             } finally
             {
-                await getWorkouts();
+                const workouts = await getWorkouts();
                 setisLoadingComplete(true);
             }
         };
