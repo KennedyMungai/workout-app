@@ -1,6 +1,5 @@
 import { View, StyleSheet, FlatList, Text, Pressable } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
-import data from '../data.json';
 import { WorkOut } from "../types/data";
 import WorkoutItem from "../components/WorkoutItem";
 
