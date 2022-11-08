@@ -1,4 +1,4 @@
-export const initWorkouts = () =>
+export const initWorkouts = async () =>
 {
 
 };
