@@ -1,10 +1,10 @@
-import { containsKey, storeData } from ".";
+import { containsKey, getData, storeData } from ".";
 import data from '../data.json';
 
 
 export const getWorkouts = async () =>
 {
-
+    const workouts = await getData("workout-data");
 };
 
 export const initWorkouts = async () =>
