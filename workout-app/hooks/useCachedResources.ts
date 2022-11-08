@@ -14,9 +14,12 @@ const useCachedResources = () =>
         {
             try
             {
-                const hasWorkouts: boolean = await containsKey("workout-data");
+                const hasWorkouts = await containsKey("workout-data");
 
-                await storeData("workout-data", data);
+                if (!hasWorkouts)
+                {
+                    await storeData("workout-data", data);
+                }
 
                 await Font.loadAsync({
                     "montserrat": require("../assets/fonts/Montserrat-Regular.ttf"),
