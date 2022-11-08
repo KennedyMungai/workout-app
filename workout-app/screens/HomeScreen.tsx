@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 export default function HomeScreen({ navigation }: NativeStackHeaderProps)
 {
-    const [workouts, setWorkouts] = useState([]);
+    const [workouts, setWorkouts] = useState<WorkOut[]>([]);
 
     useEffect(() =>
     {
