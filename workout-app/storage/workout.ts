@@ -1,4 +1,4 @@
-import { containsKey, getData, storeData } from ".";
+import { containsKey, getData, removeItem, storeData } from ".";
 import data from '../data.json';
 import { WorkOut } from '../types/data';
 
@@ -25,5 +25,5 @@ export const initWorkouts = async (): Promise<boolean> =>
 
 export const clearWorkouts = async () =>
 {
-
+    await removeItem("workout-data");
 };
