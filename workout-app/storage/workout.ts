@@ -22,3 +22,8 @@ export const initWorkouts = async (): Promise<boolean> =>
 
     return false;
 };
+
+export const clearWorkouts = async () =>
+{
+
+};
