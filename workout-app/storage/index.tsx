@@ -35,7 +35,7 @@ export const containsKey = async (key: string) =>
 {
     try
     {
-
+        const keys = AsyncStorage.getAllKeys();
     } catch (e: any)
     {
         console.error(e.message);
