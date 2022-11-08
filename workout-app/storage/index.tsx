@@ -30,3 +30,14 @@ export const getData = async (key: string) =>
         console.log(e.message);
     }
 };
+
+export const containsKey = async (key: string) =>
+{
+    try
+    {
+
+    } catch (e: any)
+    {
+        console.error(e.message);
+    }
+};
