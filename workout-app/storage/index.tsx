@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import React from 'react';
 
 
-export const storeData = async () =>
+export const storeData = async (key: string, value: any) =>
 {
     try
     {
