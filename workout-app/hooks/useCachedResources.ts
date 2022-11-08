@@ -15,7 +15,7 @@ const useCachedResources = () =>
         {
             try
             {
-                initWorkouts();
+                await initWorkouts();
 
                 await Font.loadAsync({
                     "montserrat": require("../assets/fonts/Montserrat-Regular.ttf"),
@@ -26,7 +26,7 @@ const useCachedResources = () =>
                 console.warn(error);
             } finally
             {
-                getWorkouts();
+                await getWorkouts();
                 setisLoadingComplete(true);
             }
         };
