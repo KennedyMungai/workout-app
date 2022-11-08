@@ -14,6 +14,8 @@ const useCachedResources = () =>
         {
             try
             {
+                const hasWorkouts: boolean = await containsKey("workout-data");
+
                 await storeData("workout-data", data);
 
                 await Font.loadAsync({
