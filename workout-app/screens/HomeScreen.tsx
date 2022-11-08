@@ -3,6 +3,7 @@ import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 import { WorkOut } from "../types/data";
 import WorkoutItem from "../components/WorkoutItem";
 import { useEffect, useState } from "react";
+import { getWorkouts } from "../storage/workout";
 
 
 export default function HomeScreen({ navigation }: NativeStackHeaderProps)
@@ -11,7 +12,13 @@ export default function HomeScreen({ navigation }: NativeStackHeaderProps)
 
     useEffect(() =>
     {
+        async function getData()
+        {
+            const _workouts = await getWorkouts();
+            setWorkouts(_workouts);
+        }
 
+        getData();
     }, []);
 
     return (
