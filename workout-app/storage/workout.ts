@@ -15,5 +15,8 @@ export const initWorkouts = async () =>
     {
         console.log("Storing the data");
         await storeData("workout-data", data);
+        return true;
     }
+
+    return false;
 };
