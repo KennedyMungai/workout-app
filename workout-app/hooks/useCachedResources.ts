@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import * as Font from "expo-font";
 import { getData, storeData, containsKey } from '../storage';
-import data from "../data.json";
 import { initWorkouts, getWorkouts } from '../storage/workout';
 
 
