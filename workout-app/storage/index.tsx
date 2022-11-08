@@ -2,11 +2,11 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import React from 'react';
 
 
-const index = () =>
+const storeData = () =>
 {
     return (
 
     )
 }
 
-export default index;
+export default storeData;
