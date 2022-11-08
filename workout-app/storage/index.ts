@@ -43,7 +43,7 @@ export const containsKey = async (key: string) =>
     }
 };
 
-export const removeItem = async () =>
+export const removeItem = async (key: string) =>
 {
 
 };
