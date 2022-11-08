@@ -45,5 +45,12 @@ export const containsKey = async (key: string) =>
 
 export const removeItem = async (key: string) =>
 {
-
+    try
+    {
+        const keys = AsyncStorage.getAllKeys();
+        return (await keys).includes(key);
+    } catch (e: any)
+    {
+        console.error(e.message);
+    }
 };
