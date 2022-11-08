@@ -2,10 +2,18 @@ import { View, StyleSheet, FlatList, Text, Pressable } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 import { WorkOut } from "../types/data";
 import WorkoutItem from "../components/WorkoutItem";
+import { useEffect, useState } from "react";
 
 
 export default function HomeScreen({ navigation }: NativeStackHeaderProps)
 {
+    const [workouts, setWorkouts] = useState([]);
+
+    useEffect(() =>
+    {
+
+    }, []);
+
     return (
         <View style={styles.container}>
             <Text style={styles.header}>New Workouts</Text>
