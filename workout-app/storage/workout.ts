@@ -5,6 +5,7 @@ import data from '../data.json';
 export const getWorkouts = async () =>
 {
     const workouts = await getData("workout-data");
+    return workouts;
 };
 
 export const initWorkouts = async () =>
