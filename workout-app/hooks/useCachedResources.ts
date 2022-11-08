@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import * as Font from "expo-font";
 import { getData, storeData, containsKey } from '../storage';
-import { initWorkouts, getWorkouts } from '../storage/workout';
+import { initWorkouts, getWorkouts, clearWorkouts } from '../storage/workout';
 
 
 const useCachedResources = () =>
@@ -14,6 +14,8 @@ const useCachedResources = () =>
         {
             try
             {
+                await clearWorkouts();
+
                 await initWorkouts();
 
                 await Font.loadAsync({
