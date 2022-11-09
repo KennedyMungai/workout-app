@@ -16,6 +16,8 @@ type Navigation = NativeStackHeaderProps & DetailParams;
 
 export default function WorkoutDetailScreen({ route }: Navigation)
 {
+    const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
+
     const workout = useWorkoutBySlug(route.params.slug);
 
     if (!workout)
@@ -54,4 +56,9 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         fontWeight: "bold",
     }
-}); 
+});
+
+function useState<T>(arg0: boolean): [any, any]
+{
+    throw new Error("Function not implemented.");
+}
