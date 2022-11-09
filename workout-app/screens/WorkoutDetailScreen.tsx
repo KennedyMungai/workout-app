@@ -37,7 +37,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                 transparent={false}
                 animationType="slide"
             >
-                <View>
+                <View style={styles.centerView}>
                     <Text style={{ marginBottom: 100 }}>
                         Hello There!
                     </Text>
@@ -46,8 +46,8 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                         text="Close Modal"
                     />
                 </View>
-            </Modal>
-        </View>
+            </Modal >
+        </View >
     );
 };
 
