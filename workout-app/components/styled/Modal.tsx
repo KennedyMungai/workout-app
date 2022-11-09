@@ -8,21 +8,27 @@ const Modal = () =>
     const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
 
     return (
-        <DefaultModal
-            visible={isModalVisible}
-            transparent={false}
-            animationType="slide"
-        >
-            <View style={styles.centerView}>
-                <Text>
-                    Hello There!
-                </Text>
-                <PressableText
-                    onPress={() => setIsModalVisible(false)}
-                    text="Close Modal"
-                />
-            </View>
-        </ >
+        <>
+            <DefaultModal
+                visible={isModalVisible}
+                transparent={false}
+                animationType="slide"
+            >
+                <View style={styles.centerView}>
+                    <Text>
+                        Hello There!
+                    </Text>
+                    <PressableText
+                        onPress={() => setIsModalVisible(false)}
+                        text="Close Modal"
+                    />
+                </View>
+            </DefaultModal>
+            <PressableText
+                onPress={() => setIsModalVisible(true)}
+                text="Check Sequence"
+            />
+        </>
     )
 }
 
