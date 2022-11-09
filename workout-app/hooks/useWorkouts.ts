@@ -15,7 +15,6 @@ export const useWorkouts = () =>
     {
         async function getData()
         {
-            console.log("Getting the data")
             const _workouts = await getWorkouts();
             setWorkouts(_workouts);
         }
