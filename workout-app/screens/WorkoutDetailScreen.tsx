@@ -30,7 +30,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             <Modal
                 activator={() =>
                     <PressableText
-                        text={""}
+                        text="Check Sequence"
                         onPress={() => alert("Opening")}
                     />
                 }
