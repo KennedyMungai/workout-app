@@ -9,7 +9,7 @@ export const getWorkouts = async (): Promise<WorkOut[]> =>
     return workouts;
 };
 
-export const getWorkoutBySlug = async (slug: string) =>
+export const getWorkoutBySlug = async (slug: string): Promise<WorkOut> =>
 {
 
 }
