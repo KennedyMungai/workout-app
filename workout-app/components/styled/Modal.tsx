@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React, { FunctionComponent, useState } from 'react'
 import { View, Text, Modal as DefaultModal, Style } from 'react-native'
 import { PressableText } from './PressableText'
 
+type ModalProps = {
+    activator: FunctionComponent
+}
 
 const Modal = ({
     activator: Activator
