@@ -17,6 +17,11 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 {
     const workout = useWorkoutBySlug(route.params.slug);
 
+    if (!workout)
+    {
+        return null;
+    }
+
     return (
         <View style={styles.container}>
             <Text style={styles.header}>{workout?.name}</Text>
