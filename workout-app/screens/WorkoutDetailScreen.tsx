@@ -26,10 +26,10 @@ export default function WorkoutDetailScreen({ route }: Navigation)
     return (
         <View style={styles.container}>
             <Text style={styles.header}>{workout.name}</Text>
-            <PressableText
+            {/* <PressableText
                 onPress={() => setIsModalVisible(true)}
                 text="Check Sequence"
-            />
+            /> */}
 
         </View >
     );
