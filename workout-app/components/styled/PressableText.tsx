@@ -1,7 +1,7 @@
 import React from "react"
 import { Pressable, PressableProps, Text } from "react-native"
 
-export const PressableText = (props: PressableProps) =>
+export const PressableText = (props: PressableProps & { text: string }) =>
 {
     return (
         <Pressable
@@ -10,7 +10,7 @@ export const PressableText = (props: PressableProps) =>
             <Text
                 style={{ textDecorationLine: "underline" }}
             >
-                Check Sequence
+                {props.text}
             </Text>
         </Pressable>
     )
