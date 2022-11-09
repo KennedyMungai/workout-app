@@ -3,7 +3,7 @@ import { View, Text, Modal as DefaultModal, Style } from 'react-native'
 import { PressableText } from './PressableText'
 
 type ModalProps = {
-    activator: FunctionComponent
+    activator?: FunctionComponent
 }
 
 const Modal = ({
