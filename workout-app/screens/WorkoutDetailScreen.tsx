@@ -28,7 +28,9 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             <Pressable
                 onPress={() => alert("Opening Modal")}
             >
-                <Text>
+                <Text
+                    style={{ textDecorationLine: "underline" }}
+                >
                     Check Sequence
                 </Text>
             </Pressable>
