@@ -9,6 +9,11 @@ export const getWorkouts = async (): Promise<WorkOut[]> =>
     return workouts;
 };
 
+export const getWorkoutBySlug = async (slug: string) =>
+{
+
+}
+
 export const initWorkouts = async (): Promise<boolean> =>
 {
     const hasWorkouts = await containsKey("workout-data");
