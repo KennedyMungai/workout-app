@@ -7,6 +7,7 @@ import { WorkOut } from "../types/data";
 export const useWorkouts = () =>
 {
     const [workouts, setWorkouts] = useState<WorkOut[]>([]);
+    const isFocused = useIsFocused();
 
     useEffect(() =>
     {
