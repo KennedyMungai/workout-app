@@ -25,7 +25,9 @@ export default function WorkoutDetailScreen({ route }: Navigation)
     return (
         <View style={styles.container}>
             <Text style={styles.header}>{workout?.name}</Text>
-            <Pressable>
+            <Pressable
+                onPress={() => alert("Opening Modal")}
+            >
                 <Text>
                     Check Sequence
                 </Text>
