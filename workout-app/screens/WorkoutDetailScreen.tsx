@@ -41,7 +41,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                     Hello There!
                 </Text>
                 <PressableText
-                    onPress={() => setIsModalVisible(true)}
+                    onPress={() => setIsModalVisible(false)}
                     text="Close Modal"
                 />
             </Modal>
