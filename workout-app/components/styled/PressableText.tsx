@@ -1,7 +1,7 @@
 import React from "react"
-import { Pressable, Text } from "react-native"
+import { Pressable, PressableProps, Text } from "react-native"
 
-export const PressableText = () =>
+export const PressableText = (props: PressableProps) =>
 {
     return (
         <Pressable
