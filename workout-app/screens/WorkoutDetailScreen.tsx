@@ -38,7 +38,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                 animationType="slide"
             >
                 <View style={styles.centerView}>
-                    <Text style={{ marginBottom: 100 }}>
+                    <Text>
                         Hello There!
                     </Text>
                     <PressableText
