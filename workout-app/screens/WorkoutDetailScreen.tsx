@@ -1,7 +1,6 @@
 import { View, StyleSheet, Text, Modal as DefaultModal } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 import { useWorkoutBySlug } from "../hooks/useWorkoutBySlug";
-import { PressableText } from "../components/styled/PressableText";
 import Modal from '../components/styled/Modal';
 
 
