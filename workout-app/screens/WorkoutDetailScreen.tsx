@@ -20,7 +20,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
     return (
         <View style={styles.container}>
-            <Text style={styles.header}></Text>
+            <Text style={styles.header}>{workout?.name}</Text>
         </View>
     );
 };
