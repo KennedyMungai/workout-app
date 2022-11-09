@@ -5,7 +5,7 @@ export const PressableText = (props: PressableProps) =>
 {
     return (
         <Pressable
-            onPress={() => alert("Opening Modal")}
+            {...props}
         >
             <Text
                 style={{ textDecorationLine: "underline" }}
