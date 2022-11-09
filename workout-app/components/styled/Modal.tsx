@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, Modal, Style } from 'react-native'
 import { PressableText } from './PressableText'
 
 
 const Modal = () =>
 {
+    const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
+
+
     return (
         <Modal
             visible={isModalVisible}
