@@ -26,10 +26,14 @@ const Modal = ({
                     />
                 </View>
             </DefaultModal>
-            <PressableText
-                onPress={() => setIsModalVisible(true)}
-                text="Check Sequence"
-            />
+            {
+                Activator ?
+                    <Activator /> :
+                    <PressableText
+                        onPress={() => setIsModalVisible(true)}
+                        text="Check Sequence"
+                    />
+            }
         </View>
     )
 }
