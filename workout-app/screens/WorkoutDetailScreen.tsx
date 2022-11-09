@@ -1,5 +1,6 @@
 import { View, StyleSheet, FlatList, Text, Pressable } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
+import { useEffect } from "react";
 
 
 type DetailParams = {
@@ -14,6 +15,12 @@ type Navigation = NativeStackHeaderProps & DetailParams;
 
 export default function WorkoutDetailScreen({ route }: Navigation)
 {
+    useEffect(() =>
+    {
+
+    }, [])
+
+
     return (
         <View style={styles.container}>
             <Text style={styles.header}>Slug - {route.params.slug}</Text>
