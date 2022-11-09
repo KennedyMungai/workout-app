@@ -1,4 +1,3 @@
-import { useIsFocused } from "@react-navigation/native";
 import { useState, useEffect } from "react";
 import { getWorkouts } from "../storage/workout";
 import { WorkOut } from "../types/data";
@@ -7,9 +6,6 @@ import { WorkOut } from "../types/data";
 export const useWorkouts = () =>
 {
     const [workouts, setWorkouts] = useState<WorkOut[]>([]);
-    const isFocused = useIsFocused();
-
-    console.log(isFocused)
 
     useEffect(() =>
     {
@@ -19,11 +15,8 @@ export const useWorkouts = () =>
             setWorkouts(_workouts);
         }
 
-        if (isFocused)
-        {
-            getData();
-        }
-    }, [isFocused]);
+        getData();
+    }, []);
 
 
     return workouts;
