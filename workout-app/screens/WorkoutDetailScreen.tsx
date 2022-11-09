@@ -26,7 +26,9 @@ export default function WorkoutDetailScreen({ route }: Navigation)
     return (
         <View style={styles.container}>
             <Text style={styles.header}>{workout?.name}</Text>
-            <PressableText text="Check Sequence" />
+            <PressableText
+                text="Check Sequence"
+            />
         </View>
     );
 };
