@@ -8,7 +8,7 @@ const Modal = () =>
     const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
 
     return (
-        <>
+        <View>
             <DefaultModal
                 visible={isModalVisible}
                 transparent={false}
@@ -28,7 +28,7 @@ const Modal = () =>
                 onPress={() => setIsModalVisible(true)}
                 text="Check Sequence"
             />
-        </>
+        </View>
     )
 }
 
