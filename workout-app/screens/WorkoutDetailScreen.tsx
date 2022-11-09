@@ -21,7 +21,6 @@ export default function WorkoutDetailScreen({ route }: Navigation)
         const getData = async () =>
         {
             const workout = await getWorkoutBySlug(route.params.slug)
-            console.log(workout)
         }
 
         getData()
