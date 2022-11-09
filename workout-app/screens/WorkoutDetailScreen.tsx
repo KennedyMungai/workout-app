@@ -16,7 +16,7 @@ type Navigation = NativeStackHeaderProps & DetailParams;
 
 export default function WorkoutDetailScreen({ route }: Navigation)
 {
-    const workout = useWorkoutBySlug();
+    const workout = useWorkoutBySlug(route.params.slug);
 
     return (
         <View style={styles.container}>
