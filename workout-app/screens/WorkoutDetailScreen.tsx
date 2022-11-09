@@ -25,6 +25,11 @@ export default function WorkoutDetailScreen({ route }: Navigation)
     return (
         <View style={styles.container}>
             <Text style={styles.header}>{workout?.name}</Text>
+            <Pressable>
+                <Text>
+                    Check Sequence
+                </Text>
+            </Pressable>
         </View>
     );
 };
