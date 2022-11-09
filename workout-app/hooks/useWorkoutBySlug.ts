@@ -11,8 +11,8 @@ export const useWorkouts = (slug: string) =>
     {
         async function getData()
         {
-            const _workout = await getWorkoutBySlug();
-            setWorkout(_workouts);
+            const _workout = await getWorkoutBySlug(slug);
+            setWorkout(_workout);
         }
 
         getData();
