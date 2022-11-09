@@ -5,19 +5,19 @@ import { WorkOut } from "../types/data";
 
 export const useWorkouts = () =>
 {
-    const [workouts, setWorkouts] = useState<WorkOut[]>([]);
+    const [workout, setWorkout] = useState<WorkOut[]>([]);
 
     useEffect(() =>
     {
         async function getData()
         {
             const _workouts = await getWorkouts();
-            setWorkouts(_workouts);
+            setWorkout(_workouts);
         }
 
         getData();
     }, []);
 
 
-    return workouts;
+    return workout;
 }
