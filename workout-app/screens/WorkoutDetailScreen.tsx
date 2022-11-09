@@ -2,6 +2,7 @@ import { View, StyleSheet, Text, Modal as DefaultModal } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 import { useWorkoutBySlug } from "../hooks/useWorkoutBySlug";
 import Modal from '../components/styled/Modal';
+import { PressableText } from "../components/styled/PressableText";
 
 
 type DetailParams = {
@@ -26,7 +27,14 @@ export default function WorkoutDetailScreen({ route }: Navigation)
     return (
         <View style={styles.container}>
             <Text style={styles.header}>{workout.name}</Text>
-            <Modal />
+            <Modal
+                activator={() =>
+                    <PressableText
+                        text={""}
+                        onPress={() => alert("Opening")}
+                    />
+                }
+            />
         </View >
     );
 };
