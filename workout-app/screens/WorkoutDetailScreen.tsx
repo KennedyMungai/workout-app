@@ -16,8 +16,6 @@ type Navigation = NativeStackHeaderProps & DetailParams;
 
 export default function WorkoutDetailScreen({ route }: Navigation)
 {
-    const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
-
     const workout = useWorkoutBySlug(route.params.slug);
 
     if (!workout)
