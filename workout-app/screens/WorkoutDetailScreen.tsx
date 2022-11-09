@@ -17,7 +17,12 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 {
     useEffect(() =>
     {
+        const getData = async () =>
+        {
 
+        }
+
+        getData()
     }, [])
 
 
