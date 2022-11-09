@@ -4,7 +4,7 @@ import { PressableText } from './PressableText'
 
 
 const Modal = ({
-    activator
+    activator: Activator
 }: any) =>
 {
     const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
