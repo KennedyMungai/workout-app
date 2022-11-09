@@ -31,7 +31,9 @@ const Modal = ({
             </DefaultModal>
             {
                 Activator ?
-                    <Activator /> :
+                    <Activator
+                        handleOpen={() => setIsModalVisible(true)}
+                    /> :
                     <PressableText
                         onPress={() => setIsModalVisible(true)}
                         text="Check Sequence"
