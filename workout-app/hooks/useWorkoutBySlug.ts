@@ -3,7 +3,7 @@ import { getWorkoutBySlug, getWorkouts } from "../storage/workout";
 import { WorkOut } from "../types/data";
 
 
-export const useWorkouts = () =>
+export const useWorkouts = (slug: string) =>
 {
     const [workout, setWorkout] = useState<WorkOut>();
 
