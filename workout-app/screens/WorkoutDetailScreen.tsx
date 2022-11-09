@@ -35,7 +35,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             <Modal
                 visible={isModalVisible}
                 transparent={false}
-                animationType="none"
+                animationType="slide"
             >
                 <Text>
                     Hello There!
