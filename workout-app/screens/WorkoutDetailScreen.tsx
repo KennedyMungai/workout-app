@@ -1,6 +1,5 @@
 import { View, StyleSheet, FlatList, Text, Pressable } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
-import { getWorkoutBySlug } from "../storage/workout";
 import { useWorkoutBySlug } from "../hooks/useWorkoutBySlug";
 
 
