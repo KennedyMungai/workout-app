@@ -35,6 +35,8 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                     />
                 }
             />
+
+            <Modal />
         </View >
     );
 };
