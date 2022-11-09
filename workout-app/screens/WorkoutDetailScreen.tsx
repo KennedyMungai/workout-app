@@ -29,11 +29,11 @@ export default function WorkoutDetailScreen({ route }: Navigation)
         <View style={styles.container}>
             <Text style={styles.header}>{workout?.name}</Text>
             <PressableText
-                onPress={() => alert("Opening modal")}
+                onPress={() => setIsModalVisible(true)}
                 text="Check Sequence"
             />
             <Modal
-                visible={false}
+                visible={isModalVisible}
                 transparent={true}
                 animationType="none"
             >
