@@ -61,6 +61,11 @@ const styles = StyleSheet.create({
         fontSize: 20,
         marginBottom: 20,
         fontWeight: "bold",
+    },
+    centerView: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
     }
 });
 
