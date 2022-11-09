@@ -21,7 +21,7 @@ export const useWorkouts = () =>
         }
 
         getData();
-    }, []);
+    }, [isFocused]);
 
 
     return workouts;
