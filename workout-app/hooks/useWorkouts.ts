@@ -20,7 +20,10 @@ export const useWorkouts = () =>
             setWorkouts(_workouts);
         }
 
-        getData();
+        if (isFocused)
+        {
+            getData();
+        }
     }, [isFocused]);
 
 
