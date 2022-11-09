@@ -1,4 +1,4 @@
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, Modal } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 import { useWorkoutBySlug } from "../hooks/useWorkoutBySlug";
 import { PressableText } from "../components/styled/PressableText";
