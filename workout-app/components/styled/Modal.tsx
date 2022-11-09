@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, Text, Modal, Style } from 'react-native'
+import { View, Text, Modal as DefaultModal, Style } from 'react-native'
 import { PressableText } from './PressableText'
 
 
@@ -8,7 +8,7 @@ const Modal = () =>
     const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
 
     return (
-        <Modal
+        <DefaultModal
             visible={isModalVisible}
             transparent={false}
             animationType="slide"
@@ -22,7 +22,7 @@ const Modal = () =>
                     text="Close Modal"
                 />
             </View>
-        </Modal >
+        </ >
     )
 }
 
