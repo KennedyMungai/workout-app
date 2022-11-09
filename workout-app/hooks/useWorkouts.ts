@@ -9,6 +9,8 @@ export const useWorkouts = () =>
     const [workouts, setWorkouts] = useState<WorkOut[]>([]);
     const isFocused = useIsFocused();
 
+    console.log(isFocused)
+
     useEffect(() =>
     {
         async function getData()
