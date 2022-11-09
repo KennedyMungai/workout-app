@@ -30,7 +30,9 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                 onPress={() => alert("Opening modal")}
                 text="Check Sequence"
             />
-            <Modal>
+            <Modal
+                visible={false}
+            >
                 <Text>
                     Hello There!
                 </Text>
