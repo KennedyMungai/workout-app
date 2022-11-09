@@ -32,6 +32,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             />
             <Modal
                 visible={false}
+                transparent={true}
             >
                 <Text>
                     Hello There!
