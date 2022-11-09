@@ -1,3 +1,4 @@
+import { useIsFocused } from "@react-navigation/native";
 import { useState, useEffect } from "react";
 import { getWorkouts } from "../storage/workout";
 import { WorkOut } from "../types/data";
