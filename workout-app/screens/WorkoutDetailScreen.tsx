@@ -1,6 +1,7 @@
 import { View, StyleSheet, FlatList, Text, Pressable } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 import { getWorkoutBySlug } from "../storage/workout";
+import { useWorkoutBySlug } from "../hooks/useWorkoutBySlug";
 
 
 type DetailParams = {
@@ -15,7 +16,7 @@ type Navigation = NativeStackHeaderProps & DetailParams;
 
 export default function WorkoutDetailScreen({ route }: Navigation)
 {
-
+    const workout = useWorkoutBySlug();
 
     return (
         <View style={styles.container}>
