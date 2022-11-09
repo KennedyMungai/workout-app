@@ -8,7 +8,7 @@ type ModalProps = {
 
 const Modal = ({
     activator: Activator
-}: any) =>
+}: ModalProps) =>
 {
     const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
 
