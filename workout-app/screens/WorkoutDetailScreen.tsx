@@ -16,16 +16,6 @@ type Navigation = NativeStackHeaderProps & DetailParams;
 
 export default function WorkoutDetailScreen({ route }: Navigation)
 {
-    useEffect(() =>
-    {
-        const getData = async () =>
-        {
-            const workout = await getWorkoutBySlug(route.params.slug)
-        }
-
-        getData()
-    }, [])
-
 
     return (
         <View style={styles.container}>
