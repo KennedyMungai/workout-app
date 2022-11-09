@@ -3,7 +3,9 @@ import { View, Text, Modal as DefaultModal, Style } from 'react-native'
 import { PressableText } from './PressableText'
 
 
-const Modal = () =>
+const Modal = ({
+    activator
+}: any) =>
 {
     const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
 
