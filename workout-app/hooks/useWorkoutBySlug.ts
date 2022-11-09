@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getWorkouts } from "../storage/workout";
+import { getWorkoutBySlug, getWorkouts } from "../storage/workout";
 import { WorkOut } from "../types/data";
 
 
@@ -11,7 +11,7 @@ export const useWorkouts = () =>
     {
         async function getData()
         {
-            const _workouts = await getWorkouts();
+            const _workout = await getWorkoutBySlug();
             setWorkout(_workouts);
         }
 
