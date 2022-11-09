@@ -37,13 +37,15 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                 transparent={false}
                 animationType="slide"
             >
-                <Text style={{ marginBottom: 100 }}>
-                    Hello There!
-                </Text>
-                <PressableText
-                    onPress={() => setIsModalVisible(false)}
-                    text="Close Modal"
-                />
+                <View>
+                    <Text style={{ marginBottom: 100 }}>
+                        Hello There!
+                    </Text>
+                    <PressableText
+                        onPress={() => setIsModalVisible(false)}
+                        text="Close Modal"
+                    />
+                </View>
             </Modal>
         </View>
     );
