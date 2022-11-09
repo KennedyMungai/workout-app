@@ -8,18 +8,7 @@ import { getWorkouts } from "../storage/workout";
 
 export default function HomeScreen({ navigation }: NativeStackHeaderProps)
 {
-    const [workouts, setWorkouts] = useState<WorkOut[]>([]);
 
-    useEffect(() =>
-    {
-        async function getData()
-        {
-            const _workouts = await getWorkouts();
-            setWorkouts(_workouts);
-        }
-
-        getData();
-    }, []);
 
     return (
         <View style={styles.container}>
