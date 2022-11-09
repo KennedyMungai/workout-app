@@ -16,9 +16,10 @@ type Navigation = NativeStackHeaderProps & DetailParams;
 export default function WorkoutDetailScreen({ route }: Navigation)
 {
 
+
     return (
         <View style={styles.container}>
-            <Text style={styles.header}>Slug - {route.params.slug}</Text>
+            <Text style={styles.header}></Text>
         </View>
     );
 };
