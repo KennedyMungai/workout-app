@@ -5,7 +5,7 @@ import { WorkOut } from "../types/data";
 
 export const useWorkouts = () =>
 {
-    const [workout, setWorkout] = useState<WorkOut[]>([]);
+    const [workout, setWorkout] = useState<WorkOut>();
 
     useEffect(() =>
     {
