@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Modal, StyleSheet } from 'react-native'
+import { View, Text, Modal, Style } from 'react-native'
 import { PressableText } from './PressableText'
 
 
@@ -23,5 +23,17 @@ const Modal = () =>
         </Modal >
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        padding: 20,
+        flex: 1
+    },
+    header: {
+        fontSize: 20,
+        marginBottom: 20,
+        fontWeight: "bold",
+    },
+});
 
 export default Modal
