@@ -17,4 +17,7 @@ export const useWorkouts = () =>
 
         getData();
     }, []);
+
+
+    return workouts;
 }
