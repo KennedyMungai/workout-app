@@ -1,4 +1,4 @@
-import { View, StyleSheet, FlatList, Text, Pressable } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 import { useWorkoutBySlug } from "../hooks/useWorkoutBySlug";
 
@@ -25,7 +25,6 @@ export default function WorkoutDetailScreen({ route }: Navigation)
     return (
         <View style={styles.container}>
             <Text style={styles.header}>{workout?.name}</Text>
-
         </View>
     );
 };
