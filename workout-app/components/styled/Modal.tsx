@@ -7,7 +7,6 @@ const Modal = () =>
 {
     const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
 
-
     return (
         <Modal
             visible={isModalVisible}
