@@ -32,21 +32,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                 onPress={() => setIsModalVisible(true)}
                 text="Check Sequence"
             />
-            <Modal
-                visible={isModalVisible}
-                transparent={false}
-                animationType="slide"
-            >
-                <View style={styles.centerView}>
-                    <Text>
-                        Hello There!
-                    </Text>
-                    <PressableText
-                        onPress={() => setIsModalVisible(false)}
-                        text="Close Modal"
-                    />
-                </View>
-            </Modal >
+
         </View >
     );
 };
@@ -62,11 +48,6 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         fontWeight: "bold",
     },
-    centerView: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-    }
 });
 
 function useState<T>(arg0: boolean): [any, any]
