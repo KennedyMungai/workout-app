@@ -28,7 +28,6 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
     return (
         <View style={styles.container}>
-            <Text style={styles.header}>{workout.name}</Text>
             <Modal
                 activator={({ handleOpen }) =>
                     <PressableText
