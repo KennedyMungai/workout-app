@@ -5,6 +5,7 @@ import Modal from '../components/styled/Modal';
 import { PressableText } from "../components/styled/PressableText";
 import { formatSec } from "../utils/time";
 import { FontAwesome } from "@expo/vector-icons";
+import WorkoutItem from "../components/WorkoutItem";
 
 
 type DetailParams = {
@@ -28,6 +29,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
     return (
         <View style={styles.container}>
+            <WorkoutItem />
             <Modal
                 activator={({ handleOpen }) =>
                     <PressableText
