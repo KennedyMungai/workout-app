@@ -7,6 +7,7 @@ import { formatSec } from "../utils/time";
 import { FontAwesome } from "@expo/vector-icons";
 import WorkoutItem from "../components/WorkoutItem";
 import { SequenceItem } from '../types/data';
+import { useState } from "react";
 
 
 type DetailParams = {
@@ -98,8 +99,3 @@ const styles = StyleSheet.create({
 
     }
 });
-
-function useState<T>(arg0: boolean): [any, any]
-{
-    throw new Error("Function not implemented.");
-}
