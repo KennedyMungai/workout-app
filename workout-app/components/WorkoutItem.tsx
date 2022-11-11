@@ -11,6 +11,12 @@ const WorkoutItem = ({ item, children }: { item: WorkOut, children?: React.React
             <Text style={styles.name}>Name: {item.name}</Text>
             <Text style={styles.duration}>Duration: {formatSec(item.duration)}</Text>
             <Text style={styles.difficulty}>Difficulty: {item.difficulty}</Text>
+            {
+                children &&
+                <View>
+                    {children}
+                </View>
+            }
         </View>
     )
 }
