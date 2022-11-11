@@ -39,11 +39,13 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                 <View>
                     {
                         workout.sequence.map(si => (
-                            <Text
-                                key={si.slug}
-                            >
-                                {si.name} | {si.type} | {formatSec(si.duration)}
-                            </Text>
+                            <View>
+                                <Text
+                                    key={si.slug}
+                                >
+                                    {si.name} | {si.type} | {formatSec(si.duration)}
+                                </Text>
+                            </View>
                         ))
                     }
                 </View>
