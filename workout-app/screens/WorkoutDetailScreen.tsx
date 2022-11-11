@@ -27,7 +27,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
     const addItemToSequence = (idx: number) =>
     {
-        setSequence([...sequence, workout?.sequence[idx]]);
+        setSequence([...sequence, workout!.sequence[idx]]);
     }
 
     if (!workout)
