@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export const useCountDown = (
     idx: number,
     initialCount: number
 ) =>
 {
-    let intervalId: number;
+    const intervalRef = useRef<number>;
 
     const [countDown, setCountDown] = useState<number>(initialCount)
 
