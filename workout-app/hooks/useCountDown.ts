@@ -46,8 +46,11 @@ export const useCountDown = (
 
     const cleanup = () =>
     {
-        window.clearInterval(intervalRef.current)
-        intervalRef.current = undefined
+        if (intervalRef.current)
+        {
+            window.clearInterval(intervalRef.current)
+            intervalRef.current = undefined
+        }
     }
 
     return countDown
