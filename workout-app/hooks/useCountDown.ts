@@ -40,7 +40,7 @@ export const useCountDown = (
     {
         if (countDown === 0)
         {
-            console.log("Clean Up")
+            cleanup()
         }
     }, [countDown])
 
