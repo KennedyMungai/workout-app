@@ -47,7 +47,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             return
         }
 
-        if (trackerIdx + 1 === workout.sequence.length)
+        if (trackerIdx === workout.sequence.length - 1)
         {
             return
         }
