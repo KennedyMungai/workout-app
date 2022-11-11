@@ -34,6 +34,12 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             -1
     )
 
+    useEffect(() =>
+    {
+
+    }, [countDown])
+
+
     const addItemToSequence = (idx: number) =>
     {
         setSequence([...sequence, workout!.sequence[idx]]);
