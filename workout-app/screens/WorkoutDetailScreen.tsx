@@ -36,7 +36,9 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             -1
     )
 
-    const hasReachedEnd: boolean = sequence.length === workout!.sequence.length && countDown === 0
+    const hasReachedEnd: boolean =
+        sequence.length === workout!.sequence.length &&
+        countDown === 0
 
     useEffect(() =>
     {
