@@ -5,7 +5,7 @@ export const useCountDown = (
     initialCount: number
 ) =>
 {
-    let intervalId;
+    let intervalId: number;
 
     const [countDown, setCountDown] = useState<number>(initialCount)
 
@@ -16,7 +16,7 @@ export const useCountDown = (
             return
         }
 
-        const intervalId = window.setInterval(() =>
+        intervalId = window.setInterval(() =>
         {
             setCountDown((count) =>
             {
