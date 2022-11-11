@@ -1,10 +1,18 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, StyleProp, ViewStyle } from 'react-native';
 import { WorkOut } from '../types/data';
 import { formatSec, secToMin } from '../utils/time';
 
 
-const WorkoutItem = ({ item, children }: { item: WorkOut, children?: React.ReactNode }) =>
+const WorkoutItem = ({
+    item,
+    children,
+    childStyles = {}
+}: {
+    item: WorkOut,
+    children?: React.ReactNode,
+    childStyles?: StyleProp<ViewStyle>
+}) =>
 {
     return (
         <View style={styles.container}>
