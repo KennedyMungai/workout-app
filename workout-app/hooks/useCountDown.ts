@@ -5,7 +5,7 @@ export const useCountDown = (
     initialCount: number
 ) =>
 {
-    const intervalRef = useRef<number>;
+    const intervalRef = useRef<number>();
 
     const [countDown, setCountDown] = useState<number>(initialCount)
 
