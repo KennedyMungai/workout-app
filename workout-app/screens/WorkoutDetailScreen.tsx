@@ -68,7 +68,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             <View style={{ alignItems: "center" }}>
                 <FontAwesome
                     name="play-circle-o"
-                    size={50}
+                    size={100}
                 />
             </View>
         </View >
