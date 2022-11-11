@@ -74,11 +74,13 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             </WorkoutItem>
 
             <View style={{ alignItems: "center" }}>
-                <FontAwesome
-                    name="play-circle-o"
-                    size={100}
-                    onPress={() => addItemToSequence(0)}
-                />
+                {
+                    <FontAwesome
+                        name="play-circle-o"
+                        size={100}
+                        onPress={() => addItemToSequence(0)}
+                    />
+                }
             </View>
         </View >
     );
