@@ -38,7 +38,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
     {
         if (countDown === 0)
         {
-            addItemToSequence(trackerIdx)
+            addItemToSequence(trackerIdx + 1)
         }
     }, [countDown])
 
