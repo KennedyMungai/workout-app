@@ -50,6 +50,7 @@ export const useCountDown = (
     {
         if (intervalRef.current)
         {
+            setIsRunning(false)
             window.clearInterval(intervalRef.current)
             intervalRef.current = undefined
         }
