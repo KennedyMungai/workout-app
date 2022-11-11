@@ -29,5 +29,11 @@ export const useCountDown = (
 
     }, [idx])
 
+    useEffect(() =>
+    {
+
+    }, [initialCount])
+
+
     return countDown
 }
