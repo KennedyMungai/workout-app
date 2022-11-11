@@ -68,6 +68,10 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         fontWeight: "bold",
     },
+    sequenceItem: {
+        alignItems: "center",
+
+    }
 });
 
 function useState<T>(arg0: boolean): [any, any]
