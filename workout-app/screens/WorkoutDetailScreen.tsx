@@ -68,6 +68,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             <View>
                 <FontAwesome
                     name="play-circle-o"
+                    size={50}
                 />
             </View>
         </View >
