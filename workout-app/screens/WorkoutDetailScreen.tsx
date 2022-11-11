@@ -41,6 +41,11 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             return
         }
 
+        if (trackerIdx + 1 === workout.sequence.length)
+        {
+            return
+        }
+
         if (countDown === 0)
         {
             addItemToSequence(trackerIdx + 1)
