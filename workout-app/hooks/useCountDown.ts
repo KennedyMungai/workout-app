@@ -34,6 +34,15 @@ export const useCountDown = (
         setCountDown(initialCount)
     }, [initialCount])
 
+    useEffect(() =>
+    {
+        if (countDown === 0)
+        {
+            console.log("Clean Up")
+        }
+    }, [countDown])
+
+
 
     return countDown
 }
