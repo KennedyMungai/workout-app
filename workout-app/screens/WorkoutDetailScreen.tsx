@@ -4,6 +4,7 @@ import { useWorkoutBySlug } from "../hooks/useWorkoutBySlug";
 import Modal from '../components/styled/Modal';
 import { PressableText } from "../components/styled/PressableText";
 import { formatSec } from "../utils/time";
+import { FontAwesome } from "@expo/vector-icons";
 
 
 type DetailParams = {
@@ -43,6 +44,10 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                                 <Text>
                                     {si.name} | {si.type} | {formatSec(si.duration)}
                                 </Text>
+                                <FontAwesome
+                                    name="arrow-down"
+                                    size={20}
+                                />
                             </View>
                         ))
                     }
