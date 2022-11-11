@@ -34,6 +34,8 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             return
         }
 
+        setCountDown(workout!.sequence[trackerIdx].duration)
+
         window.setInterval(() =>
         {
             setCountDown((count) =>
