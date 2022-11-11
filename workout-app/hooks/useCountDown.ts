@@ -56,5 +56,8 @@ export const useCountDown = (
         }
     }
 
-    return countDown
+    return {
+        countDown,
+        isRunning
+    }
 }
