@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from 'react'
+import React, { FunctionComponent, ReactNode, useState } from 'react'
 import { View, Text, Modal as DefaultModal, StyleSheet } from 'react-native'
 import { PressableText } from './PressableText'
 
@@ -8,7 +8,7 @@ type ModalProps = {
             handleOpen: () => void
         }
     >,
-    children: React.ReactNode
+    children: ReactNode
 }
 
 const Modal = ({
