@@ -31,6 +31,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
         <View style={styles.container}>
             <WorkoutItem
                 item={workout}
+
             >
                 <Modal
                     activator={({ handleOpen }) =>
