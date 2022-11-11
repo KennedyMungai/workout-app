@@ -36,7 +36,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
     useEffect(() =>
     {
-
+        console.log("Detail Screen", countDown)
     }, [countDown])
 
 
