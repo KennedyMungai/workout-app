@@ -36,7 +36,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
         setCountDown(workout!.sequence[trackerIdx].duration)
 
-        const interval = window.setInterval(() =>
+        const intervalId = window.setInterval(() =>
         {
             setCountDown((count) =>
             {
@@ -47,7 +47,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
         console.log("Tracker has been changed")
 
-        return () => window.clearInterval(interval)
+        return () => window.clearInterval(intervalId)
 
     }, [trackerIdx])
 
