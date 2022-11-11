@@ -140,5 +140,8 @@ const styles = StyleSheet.create({
     },
     countDown: {
         fontSize: 50,
+        flexDirection: "row",
+        justifyContent: "space-around",
+        marginBottom: 20
     }
 });
