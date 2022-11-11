@@ -65,6 +65,11 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                 </Modal>
             </WorkoutItem>
 
+            <View>
+                <FontAwesome
+                    name="play-circle-o"
+                />
+            </View>
         </View >
     );
 };
