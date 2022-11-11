@@ -46,6 +46,9 @@ export default function WorkoutDetailScreen({ route }: Navigation)
         }, 1000)
 
         console.log("Tracker has been changed")
+
+        return = () => window.clearInterval()
+
     }, [trackerIdx])
 
 
