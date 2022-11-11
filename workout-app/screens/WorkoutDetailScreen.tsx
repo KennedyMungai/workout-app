@@ -36,7 +36,10 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
     useEffect(() =>
     {
-        console.log("Detail Screen", countDown)
+        if (countDown === 0)
+        {
+            addItemToSequence(trackerIdx)
+        }
     }, [countDown])
 
 
