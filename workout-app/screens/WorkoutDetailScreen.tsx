@@ -120,6 +120,11 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                     </View>
                 }
             </View>
+            <View>
+                <Text>
+
+                </Text>
+            </View>
         </View >
     );
 };
