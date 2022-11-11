@@ -4,7 +4,7 @@ import { WorkOut } from '../types/data';
 import { formatSec, secToMin } from '../utils/time';
 
 
-const WorkoutItem = ({ item, children }: { item: WorkOut, children: React.ReactNode }) =>
+const WorkoutItem = ({ item, children }: { item: WorkOut, children?: React.ReactNode }) =>
 {
     return (
         <View style={styles.container}>
