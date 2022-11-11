@@ -48,7 +48,8 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                                     {si.name} | {si.type} | {formatSec(si.duration)}
                                 </Text>
                                 {
-                                    <FontAwesome
+                                    idx !== workout.sequence.length - 1 &&
+                                    < FontAwesome
                                         name="arrow-down"
                                         size={20}
                                     />
