@@ -29,6 +29,11 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
     useEffect(() =>
     {
+        if (trackerIdx === -1)
+        {
+            return
+        }
+
         console.log("Tracker has been changed")
     }, [trackerIdx])
 
