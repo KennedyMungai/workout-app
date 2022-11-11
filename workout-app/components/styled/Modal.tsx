@@ -26,7 +26,7 @@ const Modal = ({
                 animationType="slide"
             >
                 <View style={styles.centerView}>
-                    {props}
+                    {children}
                     <PressableText
                         onPress={() => setIsModalVisible(false)}
                         text="Close Modal"
