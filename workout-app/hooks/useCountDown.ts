@@ -58,6 +58,7 @@ export const useCountDown = (
 
     return {
         countDown,
-        isRunning
+        isRunning,
+        stop: cleanup
     }
 }
