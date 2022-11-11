@@ -27,7 +27,7 @@ export const useCountDown = (
 
         console.log("Tracker has been changed")
 
-        return () => window.clearInterval(intervalId)
+        return () => window.clearInterval(intervalRef.current)
 
     }, [idx])
 
