@@ -9,12 +9,12 @@ export const useCountDown = (
 
     useEffect(() =>
     {
-        if (trackerIdx === -1)
+        if (idx === -1)
         {
             return
         }
 
-        setCountDown(workout!.sequence[trackerIdx].duration)
+        setCountDown(workout!.sequence[idx].duration)
 
         const intervalId = window.setInterval(() =>
         {
@@ -29,5 +29,5 @@ export const useCountDown = (
 
         return () => window.clearInterval(intervalId)
 
-    }, [trackerIdx])
+    }, [idx])
 }
