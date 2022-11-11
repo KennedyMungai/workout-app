@@ -8,6 +8,7 @@ export const useCountDown = (
     const intervalRef = useRef<number>();
 
     const [countDown, setCountDown] = useState<number>(initialCount)
+    const [isRunning, setIsRunning] = useState<boolean>(false)
 
     useEffect(() =>
     {
