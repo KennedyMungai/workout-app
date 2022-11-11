@@ -12,7 +12,8 @@ type ModalProps = {
 }
 
 const Modal = ({
-    activator: Activator
+    activator: Activator,
+    children
 }: ModalProps) =>
 {
     const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
@@ -25,7 +26,7 @@ const Modal = ({
                 animationType="slide"
             >
                 <View style={styles.centerView}>
-
+                    {props}
                     <PressableText
                         onPress={() => setIsModalVisible(false)}
                         text="Close Modal"
