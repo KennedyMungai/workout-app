@@ -34,6 +34,15 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             return
         }
 
+        window.setInterval(() =>
+        {
+            setCountDown((count) =>
+            {
+                console.log(count)
+                return count - 1
+            })
+        }, 1000)
+
         console.log("Tracker has been changed")
     }, [trackerIdx])
 
