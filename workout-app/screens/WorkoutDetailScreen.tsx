@@ -8,6 +8,7 @@ import { FontAwesome } from "@expo/vector-icons";
 import WorkoutItem from "../components/WorkoutItem";
 import { SequenceItem } from '../types/data';
 import { useEffect, useState } from "react";
+import { useCountDown } from '../hooks/useCountDown';
 
 
 type DetailParams = {
@@ -23,12 +24,15 @@ type Navigation = NativeStackHeaderProps & DetailParams;
 export default function WorkoutDetailScreen({ route }: Navigation)
 {
     const [sequence, setSequence] = useState<SequenceItem[]>([]);
-    const [countDown, setCountDown] = useState<number>(-1)
     const [trackerIdx, setTrackerIdx] = useState<number>(-1)
     const workout = useWorkoutBySlug(route.params.slug);
 
-
-
+    const countDown = useCountDown(
+        trackerIdx,
+        trackerIdx >= 0 ?
+            sequence[trackerIdx].duration :
+            -1
+    )
 
     const addItemToSequence = (idx: number) =>
     {
