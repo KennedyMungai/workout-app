@@ -28,4 +28,6 @@ export const useCountDown = (
         return () => window.clearInterval(intervalId)
 
     }, [idx])
+
+    return countDown
 }
