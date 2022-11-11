@@ -30,7 +30,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
     useEffect(() =>
     {
 
-    }, [])
+    }, [trackerIdx])
 
 
     const addItemToSequence = (idx: number) =>
