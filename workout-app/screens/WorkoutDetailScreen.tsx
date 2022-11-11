@@ -29,7 +29,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
     useEffect(() =>
     {
-
+        console.log("Tracker has been changed")
     }, [trackerIdx])
 
 
