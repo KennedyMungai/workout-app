@@ -24,6 +24,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 {
     const [sequence, setSequence] = useState<SequenceItem[]>([]);
     const [countDown, setCountDown] = useState<number>(-1)
+    const [trackerIdx, setTrackerIdx] = useState<number>(-1)
     const workout = useWorkoutBySlug(route.params.slug);
 
     const addItemToSequence = (idx: number) =>
