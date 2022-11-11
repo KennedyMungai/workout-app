@@ -114,7 +114,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                 {
                     sequence.length > 0 && countDown >= 0 &&
                     <View>
-                        <Text>
+                        <Text style={styles.countDown}>
                             {countDown}
                         </Text>
                     </View>
@@ -137,5 +137,8 @@ const styles = StyleSheet.create({
     },
     sequenceItem: {
         alignItems: "center",
+    },
+    countDown: {
+        fontSize: 50,
     }
 });
