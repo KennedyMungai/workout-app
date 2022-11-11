@@ -36,6 +36,8 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
     useEffect(() =>
     {
+        console.log(countDown)
+
         if (!workout)
         {
             return
