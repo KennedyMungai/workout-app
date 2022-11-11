@@ -5,6 +5,8 @@ export const useCountDown = (
     initialCount: number
 ) =>
 {
+    let intervalId;
+
     const [countDown, setCountDown] = useState<number>(initialCount)
 
     useEffect(() =>
