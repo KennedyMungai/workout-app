@@ -14,8 +14,6 @@ export const useCountDown = (
             return
         }
 
-        setCountDown(workout!.sequence[idx].duration)
-
         const intervalId = window.setInterval(() =>
         {
             setCountDown((count) =>
