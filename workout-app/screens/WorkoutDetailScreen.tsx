@@ -34,9 +34,9 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                         onPress={() => alert("Opening")}
                     />
                 }
-            />
-            <Text>Hello There</Text>
-            <Modal />
+            >
+                <Text>Hello There</Text>
+            </Modal>
         </View >
     );
 };
