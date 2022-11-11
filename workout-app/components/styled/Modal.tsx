@@ -7,7 +7,8 @@ type ModalProps = {
         {
             handleOpen: () => void
         }
-    >
+    >,
+    children: React.ReactNode
 }
 
 const Modal = ({
