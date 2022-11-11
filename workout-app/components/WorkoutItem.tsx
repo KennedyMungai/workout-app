@@ -21,7 +21,7 @@ const WorkoutItem = ({
             <Text style={styles.difficulty}>Difficulty: {item.difficulty}</Text>
             {
                 children &&
-                <View>
+                <View style={childStyles}>
                     {children}
                 </View>
             }
