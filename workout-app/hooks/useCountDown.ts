@@ -16,7 +16,7 @@ export const useCountDown = (
             return
         }
 
-        intervalId = window.setInterval(() =>
+        intervalRef.current = window.setInterval(() =>
         {
             setCountDown((count) =>
             {
