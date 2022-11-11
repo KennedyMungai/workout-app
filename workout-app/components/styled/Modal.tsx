@@ -26,7 +26,7 @@ const Modal = ({
                 animationType="slide"
             >
                 <View style={styles.centerView}>
-                    <View>
+                    <View style={styles.contentView}>
                         {children}
                     </View>
                     <PressableText
