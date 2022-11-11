@@ -128,7 +128,13 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             </View>
             <View>
                 <Text>
-
+                    {
+                        sequence.length === 0 ?
+                            "Prepare" :
+                            hasReachedEnd ?
+                                "Great Job" :
+                                sequence[trackerIdx].name
+                    }
                 </Text>
             </View>
         </View >
