@@ -37,7 +37,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                     />
                 }
             >
-                <View>
+                <View style={styles.sequenceItem}>
                     {
                         workout.sequence.map(si => (
                             <View key={si.slug}>
