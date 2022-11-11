@@ -27,29 +27,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
     const [trackerIdx, setTrackerIdx] = useState<number>(-1)
     const workout = useWorkoutBySlug(route.params.slug);
 
-    useEffect(() =>
-    {
-        if (trackerIdx === -1)
-        {
-            return
-        }
 
-        setCountDown(workout!.sequence[trackerIdx].duration)
-
-        const intervalId = window.setInterval(() =>
-        {
-            setCountDown((count) =>
-            {
-                console.log(count)
-                return count - 1
-            })
-        }, 1000)
-
-        console.log("Tracker has been changed")
-
-        return () => window.clearInterval(intervalId)
-
-    }, [trackerIdx])
 
 
     const addItemToSequence = (idx: number) =>
