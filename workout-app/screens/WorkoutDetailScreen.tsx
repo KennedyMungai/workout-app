@@ -29,7 +29,9 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
     return (
         <View style={styles.container}>
-            <WorkoutItem />
+            <WorkoutItem
+                item={workout}
+            />
             <Modal
                 activator={({ handleOpen }) =>
                     <PressableText
