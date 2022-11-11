@@ -3,6 +3,7 @@ import { NativeStackHeaderProps } from '@react-navigation/native-stack';
 import { useWorkoutBySlug } from "../hooks/useWorkoutBySlug";
 import Modal from '../components/styled/Modal';
 import { PressableText } from "../components/styled/PressableText";
+import { formatSec } from "../utils/time";
 
 
 type DetailParams = {
@@ -35,7 +36,17 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                     />
                 }
             >
-                <Text>Hello There</Text>
+                <View>
+                    {
+                        workout.sequence.map(si => (
+                            <Text
+                                key={si.slug}
+                            >
+                                {si.name} | {si.type} | {formatSec(si.duration)}
+                            </Text>
+                        ))
+                    }
+                </View>
             </Modal>
         </View >
     );
