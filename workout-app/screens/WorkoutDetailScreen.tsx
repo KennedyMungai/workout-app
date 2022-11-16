@@ -135,7 +135,19 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                             <FontAwesome
                                 name="play-circle-o"
                                 size={100}
-                                onPress={() => start(countDown)}
+                                onPress={() =>
+                                {
+                                    if (hasReachedEnd)
+                                    {
+                                        console.log("Restart counter")
+                                    }
+                                    else 
+                                    {
+                                        start(countDown)
+                                    }
+
+                                    start(countDown)
+                                }}
                             />
                 }
                 {
