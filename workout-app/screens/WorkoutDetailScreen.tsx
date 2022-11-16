@@ -117,12 +117,26 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
             <View style={{ alignItems: "center" }}>
                 {
-                    sequence.length === 0 &&
-                    <FontAwesome
-                        name="play-circle-o"
-                        size={100}
-                        onPress={() => addItemToSequence(0)}
-                    />
+                    sequence.length === 0 ?
+                        <FontAwesome
+                            name="play-circle-o"
+                            size={100}
+                            onPress={() => addItemToSequence(0)}
+                        />
+                        :
+                        isRunning
+                            ?
+                            <FontAwesome
+                                name="stop-circle-o"
+                                size={100}
+                                onPress={() => { }}
+                            />
+                            :
+                            <FontAwesome
+                                name="play-circle-o"
+                                size={100}
+                                onPress={() => { }}
+                            />
                 }
                 {
                     sequence.length > 0 && countDown >= 0 &&
