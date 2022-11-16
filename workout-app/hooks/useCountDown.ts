@@ -17,15 +17,17 @@ export const useCountDown = (
             return
         }
 
-        setIsRunning(true)
-
-        intervalRef.current = window.setInterval(() =>
+        if (isRunning && !intervalRef.current)
         {
-            setCountDown((count) =>
+            intervalRef.current = window.setInterval(() =>
             {
-                return count - 1
-            })
-        }, 1000)
+                setCountDown((count) =>
+                {
+                    return count - 1
+                })
+            }, 1000)
+        }
+
 
         console.log("Tracker has been changed")
 
