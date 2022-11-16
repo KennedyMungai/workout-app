@@ -61,6 +61,11 @@ export const useCountDown = (
     return {
         countDown,
         isRunning,
-        stop: cleanup
+        stop: cleanup,
+        start: (count?: number) =>
+        {
+            setCountDown(count ?? initialCount)
+            setIsRunning(true)
+        }
     }
 }
