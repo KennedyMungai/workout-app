@@ -115,7 +115,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                 </Modal>
             </WorkoutItem>
 
-            <View style={{ alignItems: "center" }}>
+            <View style={styles.counterUI}>
                 {
                     sequence.length === 0 ?
                         <FontAwesome
@@ -193,5 +193,8 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-around",
         marginBottom: 20
+    },
+    counterUI: {
+
     }
 });
