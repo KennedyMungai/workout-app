@@ -29,7 +29,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
     const workout = useWorkoutBySlug(route.params.slug);
 
 
-    const { countDown, isRunning, stop } = useCountDown(
+    const { countDown, isRunning, stop, start } = useCountDown(
         trackerIdx,
         trackerIdx >= 0 ?
             sequence[trackerIdx].duration :
