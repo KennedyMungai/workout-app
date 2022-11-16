@@ -68,6 +68,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
     {
         setSequence([...sequence, workout!.sequence[idx]]);
         setTrackerIdx(idx)
+        start()
     }
 
     if (!workout)
