@@ -199,5 +199,9 @@ const styles = StyleSheet.create({
         justifyContent: "space-around",
         alignItems: "center",
         marginBottom: 20
+    },
+    counterItem: {
+        flex: 1,
+        alignItems: "center",
     }
 });
