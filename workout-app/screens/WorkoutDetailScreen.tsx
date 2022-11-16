@@ -195,6 +195,9 @@ const styles = StyleSheet.create({
         marginBottom: 20
     },
     counterUI: {
-
+        flexDirection: "row",
+        justifyContent: "space-around",
+        alignItems: "center",
+        marginBottom: 20
     }
 });
