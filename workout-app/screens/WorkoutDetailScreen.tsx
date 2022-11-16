@@ -69,7 +69,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
         const newSequence = [...sequence, workout!.sequence[idx]]
         setSequence(newSequence);
         setTrackerIdx(idx)
-        start()
+        start(newSequence[idx].duration)
     }
 
     if (!workout)
