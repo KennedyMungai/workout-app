@@ -129,7 +129,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                             <FontAwesome
                                 name="stop-circle-o"
                                 size={100}
-                                onPress={() => { }}
+                                onPress={() => stop()}
                             />
                             :
                             <FontAwesome
