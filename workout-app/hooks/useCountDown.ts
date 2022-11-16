@@ -33,7 +33,7 @@ export const useCountDown = (
 
         return cleanup
 
-    }, [idx])
+    }, [idx, isRunning])
 
     useEffect(() =>
     {
