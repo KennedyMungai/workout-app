@@ -18,6 +18,8 @@ export default WorkoutForm
 
 const styles = StyleSheet.create({
     container: {
-
+        backgroundColor: "#fff",
+        borderRadius: 10,
+        padding: 10,
     }
 })
