@@ -57,6 +57,36 @@ const WorkoutForm = ({
                         />
                     }
                 />
+                <Controller
+                    control={control}
+                    rules={{
+                        required: false
+                    }}
+                    name="reps"
+                    render={({ field: { onChange, value } }) =>
+                        <TextInput
+                            onChangeText={onChange}
+                            value={value}
+                            placeholder="Repetitions"
+                            style={styles.input}
+                        />
+                    }
+                />
+                <Controller
+                    control={control}
+                    rules={{
+                        required: true
+                    }}
+                    name="type"
+                    render={({ field: { onChange, value } }) =>
+                        <TextInput
+                            onChangeText={onChange}
+                            value={value}
+                            placeholder="Type"
+                            style={styles.input}
+                        />
+                    }
+                />
                 <PressableText
                     text="Submit"
                     onPress={handleSubmit((data) =>
