@@ -84,12 +84,14 @@ const WorkoutForm = ({
                         }}
                         name="type"
                         render={({ field: { onChange, value } }) =>
-                            <TextInput
-                                onChangeText={onChange}
-                                value={value}
-                                placeholder="Type"
-                                style={styles.input}
-                            />
+                            <View>
+                                <TextInput
+                                    onChangeText={onChange}
+                                    value={value}
+                                    placeholder="Type"
+                                    style={styles.input}
+                                />
+                            </View>
                         }
                     />
                 </View>
