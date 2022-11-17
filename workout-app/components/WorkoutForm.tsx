@@ -35,6 +35,7 @@ const WorkoutForm = ({
                         <TextInput
                             onChangeText={onChange}
                             value={value}
+                            placeholder="Name"
                             style={styles.input}
                         />
                     }
@@ -49,6 +50,7 @@ const WorkoutForm = ({
                         <TextInput
                             onChangeText={onChange}
                             value={value}
+                            placeholder="Duration"
                             style={styles.input}
                         />
                     }
