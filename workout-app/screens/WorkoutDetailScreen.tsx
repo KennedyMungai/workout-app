@@ -224,6 +224,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     wrapper: {
-
+        borderRadius: 10,
+        borderColor: "rgba(0,0,0,0.1)",
+        backgroundColor: "#fff",
+        borderWidth: 1,
+        padding: 10,
     }
 });
