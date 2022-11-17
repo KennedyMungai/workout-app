@@ -152,7 +152,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                                         {
                                             if (hasReachedEnd)
                                             {
-                                                addItemToSequence()
+                                                addItemToSequence(0)
                                             }
                                             else 
                                             {
