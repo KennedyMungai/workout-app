@@ -39,6 +39,10 @@ const WorkoutForm = ({
                         />
                     }
                 />
+                <PressableText
+                    text="Submit",
+                onPress={() => { }}
+                />
             </View>
         </View>
     )
