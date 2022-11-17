@@ -16,7 +16,10 @@ const WorkoutForm = () =>
             </Text>
             <View>
                 <TextInput
-
+                    value={form.name}
+                />
+                <TextInput
+                    value={form.duration}
                 />
             </View>
         </View>
