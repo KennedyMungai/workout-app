@@ -9,7 +9,7 @@ type ExerciseForm = {
 }
 
 type WorkoutProps = {
-    onSubmit: () => void
+    onSubmit: (form: ExerciseForm) => void
 }
 
 const WorkoutForm = ({
