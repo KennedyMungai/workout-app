@@ -26,6 +26,8 @@ export default function WorkoutDetailScreen({ route }: Navigation)
     const [sequence, setSequence] = useState<SequenceItem[]>([]);
     const [trackerIdx, setTrackerIdx] = useState<number>(-1)
 
+    const startupSequence = []
+
     const workout = useWorkoutBySlug(route.params.slug);
 
 
