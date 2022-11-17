@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, TextInput } from 'react-native'
+import { PressableText } from './styled/PressableText'
 
 
 const WorkoutForm = () =>
@@ -33,6 +34,12 @@ const WorkoutForm = () =>
                     style={styles.input}
                     onChangeText={OnChangeText("duration")}
                 />
+
+                <PressableText
+                    text="Submit"
+                    onPress={() => alert(form)}
+                />
+
             </View>
         </View>
     )
