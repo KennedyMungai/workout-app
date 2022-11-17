@@ -90,18 +90,14 @@ const WorkoutForm = ({
                                 {
                                     isSelectionOn ?
                                         <View>
-                                            <PressableText
-                                                text="exercise"
-                                                onPressIn={() => setIsSelectionOn(false)}
-                                            />
-                                            <PressableText
-                                                text="break"
-                                                onPressIn={() => setIsSelectionOn(false)}
-                                            />
-                                            <PressableText
-                                                text="stretch"
-                                                onPressIn={() => setIsSelectionOn(false)}
-                                            />
+                                            {
+                                                selectionItems.map(selection =>
+                                                    <PressableText
+                                                        text={selection}
+                                                        onPressIn={() => setIsSelectionOn(false)}
+                                                    />
+                                                )
+                                            }
                                         </View>
                                         :
                                         <TextInput
