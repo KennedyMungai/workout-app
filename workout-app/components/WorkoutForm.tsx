@@ -8,12 +8,13 @@ type ExerciseForm = {
     duration: string
 }
 
+type WorkoutProps = {
+    onSubmit: () => void
+}
 
 const WorkoutForm = ({
-    onSubmit
-}: {
-    onSubmit: () => void
-}) =>
+    onSubmit: WorkoutProps
+}: WorkoutProps) =>
 {
     const [form, setForm] = useState({
         name: "",
