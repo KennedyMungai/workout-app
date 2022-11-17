@@ -17,7 +17,7 @@ const WorkoutForm = ({
     onSubmit
 }: WorkoutProps) =>
 {
-
+    const { control } = useForm();
 
     return (
         <View style={styles.container}>
