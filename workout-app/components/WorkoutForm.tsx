@@ -17,9 +17,11 @@ const WorkoutForm = () =>
             <View>
                 <TextInput
                     value={form.name}
+                    style={styles.input}
                 />
                 <TextInput
                     value={form.duration}
+                    style={styles.input}
                 />
             </View>
         </View>
@@ -34,5 +36,11 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
         borderRadius: 10,
         padding: 10,
-    }
+    },
+    input: {
+        height: 40,
+        margin: 12,
+        borderWidth: 1,
+        padding: 10,
+    },
 })
