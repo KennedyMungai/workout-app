@@ -116,59 +116,61 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             </WorkoutItem>
 
             <View style={styles.counterUI}>
-                {
-                    sequence.length === 0 ?
-                        <FontAwesome
-                            name="play-circle-o"
-                            size={100}
-                            onPress={() => addItemToSequence(0)}
-                        />
-                        :
-                        isRunning
-                            ?
-                            <FontAwesome
-                                name="stop-circle-o"
-                                size={100}
-                                onPress={() => stop()}
-                            />
-                            :
+                <View>
+                    {
+                        sequence.length === 0 ?
                             <FontAwesome
                                 name="play-circle-o"
                                 size={100}
-                                onPress={() =>
-                                {
-                                    if (hasReachedEnd)
-                                    {
-                                        console.log("Restart counter")
-                                    }
-                                    else 
-                                    {
-                                        start(countDown)
-                                    }
-
-                                    start(countDown)
-                                }}
+                                onPress={() => addItemToSequence(0)}
                             />
-                }
-                {
-                    sequence.length > 0 && countDown >= 0 &&
-                    <View>
-                        <Text style={styles.countDown}>
-                            {countDown}
-                        </Text>
-                    </View>
-                }
-            </View>
-            <View style={{ alignItems: "center" }}>
-                <Text style={{ fontSize: 60, fontWeight: "bold" }}>
-                    {
-                        sequence.length === 0 ?
-                            "Prepare" :
-                            hasReachedEnd ?
-                                "Great Job" :
-                                sequence[trackerIdx].name
+                            :
+                            isRunning
+                                ?
+                                <FontAwesome
+                                    name="stop-circle-o"
+                                    size={100}
+                                    onPress={() => stop()}
+                                />
+                                :
+                                <FontAwesome
+                                    name="play-circle-o"
+                                    size={100}
+                                    onPress={() =>
+                                    {
+                                        if (hasReachedEnd)
+                                        {
+                                            console.log("Restart counter")
+                                        }
+                                        else 
+                                        {
+                                            start(countDown)
+                                        }
+
+                                        start(countDown)
+                                    }}
+                                />
                     }
-                </Text>
+                    {
+                        sequence.length > 0 && countDown >= 0 &&
+                        <View>
+                            <Text style={styles.countDown}>
+                                {countDown}
+                            </Text>
+                        </View>
+                    }
+                </View>
+                <View style={{ alignItems: "center" }}>
+                    <Text style={{ fontSize: 60, fontWeight: "bold" }}>
+                        {
+                            sequence.length === 0 ?
+                                "Prepare" :
+                                hasReachedEnd ?
+                                    "Great Job" :
+                                    sequence[trackerIdx].name
+                        }
+                    </Text>
+                </View>
             </View>
         </View >
     );
