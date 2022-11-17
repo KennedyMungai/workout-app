@@ -75,7 +75,7 @@ const WorkoutForm = ({
                 <Controller
                     control={control}
                     rules={{
-                        required: true
+                        required: false
                     }}
                     name="type"
                     render={({ field: { onChange, value } }) =>
