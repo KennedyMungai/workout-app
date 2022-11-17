@@ -66,7 +66,17 @@ export default function WorkoutDetailScreen({ route }: Navigation)
 
     const addItemToSequence = (idx: number) =>
     {
-        const newSequence = [...sequence, workout!.sequence[idx]]
+        let newSequence = []
+
+        if (idx > 0)
+        {
+            newSequence = [...sequence, workout!.sequence[idx]]
+        }
+        else 
+        {
+            newSequence = [workout!.sequence[idx]]
+        }
+
         setSequence(newSequence);
         setTrackerIdx(idx)
         start(newSequence[idx].duration)
@@ -140,7 +150,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                                     {
                                         if (hasReachedEnd)
                                         {
-                                            console.log("Restart counter")
+                                            addItemToSequence()
                                         }
                                         else 
                                         {
