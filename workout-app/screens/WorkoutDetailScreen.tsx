@@ -166,7 +166,11 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                         sequence.length > 0 && countDown >= 0 &&
                         <View>
                             <Text style={styles.countDown}>
-                                {countDown}
+                                {
+                                    countDown > sequence[trackerIdx].duration ?
+                                        startupSequence[countDown - sequence[trackerIdx].duration - 1] :
+                                        countDown
+                                }
                             </Text>
                         </View>
                     }
