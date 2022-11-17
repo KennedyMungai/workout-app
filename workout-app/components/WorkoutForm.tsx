@@ -6,7 +6,9 @@ import { PressableText } from './styled/PressableText'
 
 export type ExerciseForm = {
     name: string,
-    duration: string
+    duration: string,
+    type: string,
+    reps?: string,
 }
 
 type WorkoutProps = {
