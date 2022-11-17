@@ -93,6 +93,7 @@ const WorkoutForm = ({
                                             {
                                                 selectionItems.map(selection =>
                                                     <PressableText
+                                                        key={selection}
                                                         text={selection}
                                                         onPressIn={() => setIsSelectionOn(false)}
                                                     />
