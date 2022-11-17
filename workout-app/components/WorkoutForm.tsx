@@ -15,6 +15,8 @@ type WorkoutProps = {
     onSubmit: (form: ExerciseForm) => void
 }
 
+const selectionItems = ["exercise", "break", "stretch"]
+
 const WorkoutForm = ({
     onSubmit
 }: WorkoutProps) =>
