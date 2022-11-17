@@ -9,7 +9,7 @@ const WorkoutForm = () =>
         duration: ""
     })
 
-    const OnChangeText = (text: string) =>
+    const OnChangeText = (name: string) => (text: string) =>
     {
         console.log(text)
     }
