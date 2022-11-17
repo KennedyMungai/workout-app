@@ -143,5 +143,10 @@ const styles = StyleSheet.create({
     },
     rowContainer: {
         flexDirection: "row",
+    },
+    selection: {
+        margin: 2,
+        padding: 3,
+        alignSelf: "center"
     }
 })
