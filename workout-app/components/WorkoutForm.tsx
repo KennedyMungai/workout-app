@@ -100,7 +100,7 @@ const WorkoutForm = ({
                                         </View>
                                         :
                                         <TextInput
-                                            onChangeText={onChange}
+                                            onPressIn={() => setIsSelectionOn(true)}
                                             placeholder="Type"
                                             style={styles.input}
                                         />
