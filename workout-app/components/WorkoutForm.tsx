@@ -17,18 +17,7 @@ const WorkoutForm = ({
     onSubmit
 }: WorkoutProps) =>
 {
-    const [form, setForm] = useState({
-        name: "",
-        duration: ""
-    })
 
-    const OnChangeText = (name: string) => (text: string) =>
-    {
-        setForm({
-            ...form,
-            [name]: text
-        })
-    }
 
     return (
         <View style={styles.container}>
