@@ -96,7 +96,11 @@ const WorkoutForm = ({
                                                         key={selection}
                                                         text={selection}
                                                         style={styles.selection}
-                                                        onPressIn={() => setIsSelectionOn(false)}
+                                                        onPressIn={() =>
+                                                        {
+                                                            onChange(selection)
+                                                            setIsSelectionOn(false)
+                                                        }}
                                                     />
                                                 )
                                             }
