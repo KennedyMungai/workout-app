@@ -25,7 +25,19 @@ const WorkoutForm = ({
                 Exercise Form
             </Text>
             <View>
-
+                <Controller
+                    control={control}
+                    rules={{
+                        required: true
+                    }}
+                    name="name"
+                    render={({ field: { onChange, value } }) =>
+                        <TextInput
+                            onChangeText={onChange}
+                            value={value}
+                        />
+                    }
+                />
             </View>
         </View>
     )
