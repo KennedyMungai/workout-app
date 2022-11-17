@@ -23,12 +23,12 @@ const WorkoutForm = () =>
                 <TextInput
                     value={form.name}
                     style={styles.input}
-                    onChangeText={OnChangeText}
+                    onChangeText={OnChangeText("name")}
                 />
                 <TextInput
                     value={form.duration}
                     style={styles.input}
-                    onChangeText={OnChangeText}
+                    onChangeText={OnChangeText("duration")}
                 />
             </View>
         </View>
