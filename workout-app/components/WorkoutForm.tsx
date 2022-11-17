@@ -95,6 +95,7 @@ const WorkoutForm = ({
                                                     <PressableText
                                                         key={selection}
                                                         text={selection}
+                                                        style={styles.selection}
                                                         onPressIn={() => setIsSelectionOn(false)}
                                                     />
                                                 )
