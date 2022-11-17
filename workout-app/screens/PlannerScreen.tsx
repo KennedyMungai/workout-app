@@ -1,13 +1,26 @@
 import { NativeStackHeaderProps } from "@react-navigation/native-stack";
 import { View, StyleSheet } from "react-native";
 import WorkoutForm, { ExerciseForm } from '../components/WorkoutForm';
+import { SequenceItem, SequenceType } from "../types/data";
 
 
 export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 {
     const handleFormSubmit = (form: ExerciseForm) =>
     {
-        alert(`${form.name} - ${form.duration} - ${form.reps} - ${form.type}`)
+        const sequenceItem: SequenceItem = {
+            slug: form.name + Date.now(),
+            name: form.name,
+            type: form.type as SequenceType,
+            duration: Number(form.duration)
+        }
+
+        if (form.reps)
+        {
+            sequenceItem.reps = Number(form.reps)
+        }
+
+        console.log(sequenceItem)
     }
 
     return (
