@@ -5,7 +5,10 @@ import WorkoutForm from '../components/WorkoutForm';
 
 export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 {
+    const handleFormSubmit = () =>
+    {
 
+    }
 
     return (
         <View style={styles.container}>
