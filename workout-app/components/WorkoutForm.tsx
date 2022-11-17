@@ -27,7 +27,7 @@ const WorkoutForm = ({
                 Exercise Form
             </Text>
             <View>
-                <View>
+                <View style={styles.rowContainer}>
                     <Controller
                         control={control}
                         rules={{
