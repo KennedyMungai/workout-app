@@ -15,7 +15,6 @@ const useCachedResources = () =>
             try
             {
                 await clearWorkouts();
-
                 await initWorkouts();
 
                 await Font.loadAsync({
