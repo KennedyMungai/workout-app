@@ -1,5 +1,6 @@
 import { NativeStackHeaderProps } from "@react-navigation/native-stack";
 import { Text, View, Button } from "react-native";
+import WorkoutForm from '../components/WorkoutForm';
 
 
 export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
@@ -8,8 +9,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 
     return (
         <View>
-            <Text>I am PlannerScreen</Text>
-            <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
+            <WorkoutForm />
         </View>
     );
 };
