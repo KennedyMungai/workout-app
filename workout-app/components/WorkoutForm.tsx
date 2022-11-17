@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TextInput } from 'react-native'
 import { PressableText } from './styled/PressableText'
 
 
-export type ExerciseForm = {
+export type ExerciseFormData = {
     name: string,
     duration: string,
     type: string,
@@ -12,7 +12,7 @@ export type ExerciseForm = {
 }
 
 type WorkoutProps = {
-    onSubmit: (form: ExerciseForm) => void
+    onSubmit: (form: ExerciseFormData) => void
 }
 
 const selectionItems = ["exercise", "break", "stretch"]
@@ -121,7 +121,7 @@ const WorkoutForm = ({
                     text="Submit"
                     onPress={handleSubmit((data) =>
                     {
-                        onSubmit(data as ExerciseForm)
+                        onSubmit(data as ExerciseFormData)
                     })}
                 />
             </View>
