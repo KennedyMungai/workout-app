@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, StyleSheet, TextInput } from 'react-native'
 
 
 const WorkoutForm = () =>
 {
+    const [form, setForm] = useState({
+        name: "",
+        duration: 0
+    })
+
     return (
         <View style={styles.container}>
             <Text>
                 Exercise Form
             </Text>
             <View>
-                <TextInput />
+                <TextInput
+
+                />
             </View>
         </View>
     )
