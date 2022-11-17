@@ -3,6 +3,12 @@ import { View, Text, StyleSheet, TextInput } from 'react-native'
 import { PressableText } from './styled/PressableText'
 
 
+type ExerciseForm = {
+    name: string,
+    duration: string
+}
+
+
 const WorkoutForm = () =>
 {
     const [form, setForm] = useState({
