@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TextInput } from 'react-native'
 import { PressableText } from './styled/PressableText'
 
 
-type ExerciseForm = {
+export type ExerciseForm = {
     name: string,
     duration: string
 }
