@@ -40,8 +40,11 @@ const WorkoutForm = ({
                     }
                 />
                 <PressableText
-                    text="Submit",
-                onPress={() => { }}
+                    text="Submit"
+                    onPress={handleSubmit((data) =>
+                    {
+                        console.log(data)
+                    })}
                 />
             </View>
         </View>
