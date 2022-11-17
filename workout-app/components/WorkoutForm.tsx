@@ -19,6 +19,8 @@ const WorkoutForm = ({
     onSubmit
 }: WorkoutProps) =>
 {
+    const [isSelectionOn, setIsSelectionOn] = useState<boolean>(false)
+
     const { control, handleSubmit } = useForm();
 
     return (
