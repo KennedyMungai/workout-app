@@ -10,7 +10,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
     const handleFormSubmit = (form: ExerciseFormData) =>
     {
         const sequenceItem: SequenceItem = {
-            slug: slugify(form.name + Date.now(), { lower: true }),
+            slug: slugify(form.name + " " + Date.now(), { lower: true }),
             name: form.name,
             type: form.type as SequenceType,
             duration: Number(form.duration)
