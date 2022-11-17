@@ -44,7 +44,7 @@ const WorkoutForm = ({
                     rules={{
                         required: true
                     }}
-                    name="name"
+                    name="Duration"
                     render={({ field: { onChange, value } }) =>
                         <TextInput
                             onChangeText={onChange}
