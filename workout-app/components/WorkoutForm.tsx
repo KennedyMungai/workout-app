@@ -9,6 +9,11 @@ const WorkoutForm = () =>
         duration: ""
     })
 
+    const OnChangeText = (text: string) =>
+    {
+        console.log(text)
+    }
+
     return (
         <View style={styles.container}>
             <Text>
@@ -18,18 +23,12 @@ const WorkoutForm = () =>
                 <TextInput
                     value={form.name}
                     style={styles.input}
-                    onChangeText={(text) =>
-                    {
-                        console.log(text)
-                    }}
+                    onChangeText={OnChangeText}
                 />
                 <TextInput
                     value={form.duration}
                     style={styles.input}
-                    onChangeText={(text) =>
-                    {
-                        console.log(text)
-                    }}
+                    onChangeText={OnChangeText}
                 />
             </View>
         </View>
