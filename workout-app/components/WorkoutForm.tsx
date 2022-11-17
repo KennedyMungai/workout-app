@@ -9,6 +9,9 @@ const WorkoutForm = () =>
             <Text>
                 Exercise Form
             </Text>
+            <View>
+                <TextInput />
+            </View>
         </View>
     )
 }
