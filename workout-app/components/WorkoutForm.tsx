@@ -75,10 +75,11 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     input: {
-        height: 40,
-        margin: 12,
+        height: 30,
+        margin: 2,
         borderWidth: 1,
-        padding: 10,
+        padding: 5,
         borderRadius: 10,
+        borderColor: "rgba(0,0,0,0.4)"
     },
 })
