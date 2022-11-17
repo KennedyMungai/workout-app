@@ -25,17 +25,6 @@ const WorkoutForm = ({
                 Exercise Form
             </Text>
             <View>
-                <TextInput
-                    value={form.name}
-                    style={styles.input}
-                    onChangeText={OnChangeText("name")}
-                />
-                <TextInput
-                    value={form.duration}
-                    style={styles.input}
-                    onChangeText={OnChangeText("duration")}
-                />
-
                 <PressableText
                     text="Submit"
                     onPress={() => onSubmit(form)}
