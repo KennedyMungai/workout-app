@@ -109,6 +109,7 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     input: {
+        flex: 1,
         height: 30,
         margin: 2,
         borderWidth: 1,
@@ -116,4 +117,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         borderColor: "rgba(0,0,0,0.4)"
     },
+    rowContainer: {
+        flexDirection: "row",
+    }
 })
