@@ -9,7 +9,11 @@ type ExerciseForm = {
 }
 
 
-const WorkoutForm = () =>
+const WorkoutForm = ({
+    onSubmit
+}: {
+    onSubmit: () => void
+}) =>
 {
     const [form, setForm] = useState({
         name: "",
