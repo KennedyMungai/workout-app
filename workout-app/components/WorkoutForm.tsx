@@ -25,10 +25,6 @@ const WorkoutForm = ({
                 Exercise Form
             </Text>
             <View>
-                <PressableText
-                    text="Submit"
-                    onPress={() => onSubmit(form)}
-                />
 
             </View>
         </View>
