@@ -6,7 +6,7 @@ const WorkoutForm = () =>
 {
     const [form, setForm] = useState({
         name: "",
-        duration: 0
+        duration: ""
     })
 
     return (
