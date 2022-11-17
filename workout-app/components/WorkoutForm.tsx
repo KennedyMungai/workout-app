@@ -43,7 +43,7 @@ const WorkoutForm = ({
                     text="Submit"
                     onPress={handleSubmit((data) =>
                     {
-                        console.log(data)
+                        onSubmit(data)
                     })}
                 />
             </View>
