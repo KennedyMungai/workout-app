@@ -1,6 +1,6 @@
 import { NativeStackHeaderProps } from "@react-navigation/native-stack";
 import { View, StyleSheet } from "react-native";
-import WorkoutForm, { ExerciseFormData } from '../components/WorkoutForm';
+import ExerciseForm, { ExerciseFormData } from '../components/ExerciseForm';
 import { SequenceItem, SequenceType } from "../types/data";
 
 
@@ -25,7 +25,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 
     return (
         <View style={styles.container}>
-            <WorkoutForm
+            <ExerciseForm
                 onSubmit={handleFormSubmit}
             />
         </View>

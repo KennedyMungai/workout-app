@@ -17,7 +17,7 @@ type WorkoutProps = {
 
 const selectionItems = ["exercise", "break", "stretch"]
 
-const WorkoutForm = ({
+const ExerciseForm = ({
     onSubmit
 }: WorkoutProps) =>
 {
@@ -129,7 +129,7 @@ const WorkoutForm = ({
     )
 }
 
-export default WorkoutForm
+export default ExerciseForm
 
 
 const styles = StyleSheet.create({
