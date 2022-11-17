@@ -58,6 +58,8 @@ const WorkoutForm = ({
                             />
                         }
                     />
+                </View>
+                <View style={styles.rowContainer}>
                     <Controller
                         control={control}
                         rules={{
