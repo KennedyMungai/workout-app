@@ -101,7 +101,6 @@ const WorkoutForm = ({
                                         :
                                         <TextInput
                                             onChangeText={onChange}
-                                            value={value}
                                             placeholder="Type"
                                             style={styles.input}
                                         />
