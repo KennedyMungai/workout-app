@@ -27,66 +27,68 @@ const WorkoutForm = ({
                 Exercise Form
             </Text>
             <View>
-                <Controller
-                    control={control}
-                    rules={{
-                        required: true
-                    }}
-                    name="name"
-                    render={({ field: { onChange, value } }) =>
-                        <TextInput
-                            onChangeText={onChange}
-                            value={value}
-                            placeholder="Name"
-                            style={styles.input}
-                        />
-                    }
-                />
-                <Controller
-                    control={control}
-                    rules={{
-                        required: true
-                    }}
-                    name="Duration"
-                    render={({ field: { onChange, value } }) =>
-                        <TextInput
-                            onChangeText={onChange}
-                            value={value}
-                            placeholder="Duration"
-                            style={styles.input}
-                        />
-                    }
-                />
-                <Controller
-                    control={control}
-                    rules={{
-                        required: false
-                    }}
-                    name="reps"
-                    render={({ field: { onChange, value } }) =>
-                        <TextInput
-                            onChangeText={onChange}
-                            value={value}
-                            placeholder="Repetitions"
-                            style={styles.input}
-                        />
-                    }
-                />
-                <Controller
-                    control={control}
-                    rules={{
-                        required: false
-                    }}
-                    name="type"
-                    render={({ field: { onChange, value } }) =>
-                        <TextInput
-                            onChangeText={onChange}
-                            value={value}
-                            placeholder="Type"
-                            style={styles.input}
-                        />
-                    }
-                />
+                <View>
+                    <Controller
+                        control={control}
+                        rules={{
+                            required: true
+                        }}
+                        name="name"
+                        render={({ field: { onChange, value } }) =>
+                            <TextInput
+                                onChangeText={onChange}
+                                value={value}
+                                placeholder="Name"
+                                style={styles.input}
+                            />
+                        }
+                    />
+                    <Controller
+                        control={control}
+                        rules={{
+                            required: true
+                        }}
+                        name="Duration"
+                        render={({ field: { onChange, value } }) =>
+                            <TextInput
+                                onChangeText={onChange}
+                                value={value}
+                                placeholder="Duration"
+                                style={styles.input}
+                            />
+                        }
+                    />
+                    <Controller
+                        control={control}
+                        rules={{
+                            required: false
+                        }}
+                        name="reps"
+                        render={({ field: { onChange, value } }) =>
+                            <TextInput
+                                onChangeText={onChange}
+                                value={value}
+                                placeholder="Repetitions"
+                                style={styles.input}
+                            />
+                        }
+                    />
+                    <Controller
+                        control={control}
+                        rules={{
+                            required: false
+                        }}
+                        name="type"
+                        render={({ field: { onChange, value } }) =>
+                            <TextInput
+                                onChangeText={onChange}
+                                value={value}
+                                placeholder="Type"
+                                style={styles.input}
+                            />
+                        }
+                    />
+                </View>
                 <PressableText
                     text="Submit"
                     onPress={handleSubmit((data) =>
