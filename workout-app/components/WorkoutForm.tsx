@@ -106,8 +106,6 @@ const WorkoutForm = ({
                                             style={styles.input}
                                         />
                                 }
-
-
                             </View>
                         }
                     />
