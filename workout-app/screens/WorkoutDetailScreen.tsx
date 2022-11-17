@@ -126,7 +126,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
                 </Modal>
             </WorkoutItem>
 
-            <View>
+            <View style={styles.wrapper}>
                 <View style={styles.counterUI}>
                     <View style={styles.counterItem}>
                         {
@@ -222,5 +222,8 @@ const styles = StyleSheet.create({
     counterItem: {
         flex: 1,
         alignItems: "center",
+    },
+    wrapper: {
+
     }
 });
