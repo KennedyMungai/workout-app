@@ -116,7 +116,7 @@ export default function WorkoutDetailScreen({ route }: Navigation)
             </WorkoutItem>
 
             <View style={styles.counterUI}>
-                <View>
+                <View style={styles.counterItem}>
                     {
                         sequence.length === 0 ?
                             <FontAwesome
