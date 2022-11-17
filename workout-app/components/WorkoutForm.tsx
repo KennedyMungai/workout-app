@@ -11,7 +11,10 @@ const WorkoutForm = () =>
 
     const OnChangeText = (name: string) => (text: string) =>
     {
-        console.log(text)
+        setForm({
+            ...form,
+            [name]: text
+        })
     }
 
     return (
