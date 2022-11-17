@@ -13,7 +13,7 @@ type WorkoutProps = {
 }
 
 const WorkoutForm = ({
-    onSubmit: WorkoutProps
+    onSubmit
 }: WorkoutProps) =>
 {
     const [form, setForm] = useState({
@@ -48,7 +48,7 @@ const WorkoutForm = ({
 
                 <PressableText
                     text="Submit"
-                    onPress={() => alert(form)}
+                    onPress={() => onSubmit(form)}
                 />
 
             </View>
