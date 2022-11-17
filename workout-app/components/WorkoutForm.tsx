@@ -98,14 +98,16 @@ const WorkoutForm = ({
                                                 text="stretch"
                                             />
                                         </View>
+                                        :
+                                        <TextInput
+                                            onChangeText={onChange}
+                                            value={value}
+                                            placeholder="Type"
+                                            style={styles.input}
+                                        />
                                 }
 
-                                {/* <TextInput
-                                    onChangeText={onChange}
-                                    value={value}
-                                    placeholder="Type"
-                                    style={styles.input}
-                                /> */}
+
                             </View>
                         }
                     />
