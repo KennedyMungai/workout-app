@@ -18,10 +18,18 @@ const WorkoutForm = () =>
                 <TextInput
                     value={form.name}
                     style={styles.input}
+                    onChangeText={(text) =>
+                    {
+                        console.log(text)
+                    }}
                 />
                 <TextInput
                     value={form.duration}
                     style={styles.input}
+                    onChangeText={(text) =>
+                    {
+                        console.log(text)
+                    }}
                 />
             </View>
         </View>
