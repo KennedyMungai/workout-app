@@ -1,5 +1,6 @@
 import { NativeStackHeaderProps } from "@react-navigation/native-stack";
 import { View, StyleSheet } from "react-native";
+import slugify from "slugify";
 import ExerciseForm, { ExerciseFormData } from '../components/ExerciseForm';
 import { SequenceItem, SequenceType } from "../types/data";
 
