@@ -84,7 +84,7 @@ const WorkoutForm = ({
                         }}
                         name="type"
                         render={({ field: { onChange, value } }) =>
-                            <View>
+                            <View style={{ flex: 1 }}>
                                 {
                                     isSelectionOn ?
                                         <View>
