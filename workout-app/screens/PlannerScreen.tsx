@@ -40,7 +40,9 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
                             text="Remove"
                             onPressIn={() =>
                             {
-                                alert(index)
+                                const items = [...seqItems]
+                                items.splice(index, 1)
+                                setSeqItems(items)
                             }}
                         />
                     </ExerciseItem>
