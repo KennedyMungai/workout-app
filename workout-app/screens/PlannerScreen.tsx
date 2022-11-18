@@ -105,12 +105,13 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
                 >
 
                     {
-                        () =>
+                        ({ handleClose }) =>
                             <Text>
                                 <WorkoutForm
                                     onSubmit={(data) =>
                                     {
                                         handleWorkoutSubmit(data)
+                                        handleClose()
                                     }}
                                 />
                             </Text>
