@@ -57,12 +57,4 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         borderColor: "rgba(0,0,0,0.4)"
     },
-    rowContainer: {
-        flexDirection: "row",
-    },
-    selection: {
-        margin: 2,
-        padding: 3,
-        alignSelf: "center"
-    }
 })
