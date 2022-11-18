@@ -24,7 +24,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
             sequenceItem.reps = Number(form.reps)
         }
 
-        console.log(sequenceItem)
+        setSeqItems([...seqItems, sequenceItem])
     }
 
     return (
