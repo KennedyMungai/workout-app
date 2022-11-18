@@ -46,7 +46,7 @@ const Modal = ({
                         handleOpen={handleOpen}
                     /> :
                     <PressableText
-                        onPress={() => setIsModalVisible(true)}
+                        onPress={handleOpen}
                         text="Check Sequence"
                     />
             }
