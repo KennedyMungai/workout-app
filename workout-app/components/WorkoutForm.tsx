@@ -37,7 +37,7 @@ const WorkoutForm = ({
             />
             <PressableText
                 style={{ marginTop: 10 }}
-                text="Add Exercise"
+                text="Confirm"
                 onPress={handleSubmit((data) =>
                 {
                     onSubmit(data as WorkoutFormData)
