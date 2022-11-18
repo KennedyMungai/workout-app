@@ -40,78 +40,78 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
         {
             return "hard"
         }
-        else if (intensity < = 100)
+        else if (intensity <= 100)
         {
             return "normal"
-        } 
-        else
-    {
-        return "easy"
-    }
-}
-
-const handleWorkoutSubmit = (form: WorkoutFormData) => 
-{
-    const duration = seqItems.reduce((acc, item) =>
-    {
-        return acc + item.duration
-    }, 0)
-
-    if (seqItems.length > 0)
-    {
-        const workout: WorkOut = {
-            name: form.name,
-            slug: slugify(form.name + " " + Date.now(), { lower: true }),
-            duration: duration,
-            difficulty: computeDifficulty(seqItems.length, duration),
-            sequence: [...seqItems],
         }
-
-        console.log(workout)
+        else
+        {
+            return "easy"
+        }
     }
-}
 
-return (
-    <View style={styles.container}>
-        <FlatList
-            data={seqItems}
-            keyExtractor={item => item.slug}
-            renderItem={({ item, index }) =>
-                <ExerciseItem item={item}>
-                    <PressableText
-                        text="Remove"
-                        onPressIn={() =>
-                        {
-                            const items = [...seqItems]
-                            items.splice(index, 1)
-                            setSeqItems(items)
-                        }}
-                    />
-                </ExerciseItem>
+    const handleWorkoutSubmit = (form: WorkoutFormData) => 
+    {
+        const duration = seqItems.reduce((acc, item) =>
+        {
+            return acc + item.duration
+        }, 0)
+
+        if (seqItems.length > 0)
+        {
+            const workout: WorkOut = {
+                name: form.name,
+                slug: slugify(form.name + " " + Date.now(), { lower: true }),
+                duration: duration,
+                difficulty: computeDifficulty(seqItems.length, duration),
+                sequence: [...seqItems],
             }
-        />
-        <ExerciseForm
-            onSubmit={handleExerciseSubmit}
-        />
-        <View>
-            <Modal
-                activator={({ handleOpen }) =>
-                    <PressableText
-                        style={{ marginTop: 15 }}
-                        text={"Create Workout"}
-                        onPress={handleOpen}
-                    />
+
+            console.log(workout)
+        }
+    }
+
+    return (
+        <View style={styles.container}>
+            <FlatList
+                data={seqItems}
+                keyExtractor={item => item.slug}
+                renderItem={({ item, index }) =>
+                    <ExerciseItem item={item}>
+                        <PressableText
+                            text="Remove"
+                            onPressIn={() =>
+                            {
+                                const items = [...seqItems]
+                                items.splice(index, 1)
+                                setSeqItems(items)
+                            }}
+                        />
+                    </ExerciseItem>
                 }
-            >
-                <Text>
-                    <WorkoutForm
-                        onSubmit={handleWorkoutSubmit}
-                    />
-                </Text>
-            </Modal>
+            />
+            <ExerciseForm
+                onSubmit={handleExerciseSubmit}
+            />
+            <View>
+                <Modal
+                    activator={({ handleOpen }) =>
+                        <PressableText
+                            style={{ marginTop: 15 }}
+                            text={"Create Workout"}
+                            onPress={handleOpen}
+                        />
+                    }
+                >
+                    <Text>
+                        <WorkoutForm
+                            onSubmit={handleWorkoutSubmit}
+                        />
+                    </Text>
+                </Modal>
+            </View>
         </View>
-    </View>
-);
+    );
 };
 
 const styles = StyleSheet.create({
