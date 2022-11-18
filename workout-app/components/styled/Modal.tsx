@@ -8,7 +8,12 @@ type ModalProps = {
             handleOpen: () => void
         }
     >,
-    children: ReactNode
+    children: FunctionComponent<
+        {
+            handleOpen: () => void,
+            handleClose: () => void
+        }
+    >
 }
 
 const Modal = ({
