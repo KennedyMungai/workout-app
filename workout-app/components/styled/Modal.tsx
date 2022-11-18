@@ -31,12 +31,7 @@ const Modal = ({
                 <View style={styles.centerView}>
                     <View style={styles.contentView}>
                         {
-                            children({
-                                handleOpen = () =>
-                                {
-
-                                }
-                            })
+                            children({ handleOpen() })
                         }
                     </View>
                     <PressableText
