@@ -7,7 +7,7 @@ import ExerciseItem from "../components/ExerciseItem";
 import Modal from "../components/styled/Modal";
 import { PressableText } from "../components/styled/PressableText";
 import WorkoutForm from "../components/WorkoutForm";
-import { SequenceItem, SequenceType } from "../types/data";
+import { SequenceItem, SequenceType, WorkOut } from "../types/data";
 import { WorkoutFormData } from '../components/WorkoutForm';
 
 
@@ -34,7 +34,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 
     const handleWorkoutSubmit = (form: WorkoutFormData) => 
     {
-        const workout = {
+        const workout: WorkOut = {
             name: form.name,
             slug: slugify(form.name + " " + Date.now(), { lower: true }),
         }
