@@ -43,7 +43,7 @@ const Modal = ({
             {
                 Activator ?
                     <Activator
-                        handleOpen={() => setIsModalVisible(true)}
+                        handleOpen={handleOpen}
                     /> :
                     <PressableText
                         onPress={() => setIsModalVisible(true)}
