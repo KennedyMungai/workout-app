@@ -34,7 +34,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 
     const computeDifficulty = (exercisesCount: number, workoutDuration: number) =>
     {
-
+        const difficulty = workoutDuration / exercisesCount
     }
 
     const handleWorkoutSubmit = (form: WorkoutFormData) => 
