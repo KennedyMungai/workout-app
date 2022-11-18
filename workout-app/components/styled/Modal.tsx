@@ -18,6 +18,9 @@ const Modal = ({
 {
     const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
 
+    const handleOpen = () => setIsModalVisible(true)
+    const handleClose = () => setIsModalVisible(false)
+
     return (
         <View>
             <DefaultModal
@@ -27,7 +30,14 @@ const Modal = ({
             >
                 <View style={styles.centerView}>
                     <View style={styles.contentView}>
-                        {children}
+                        {
+                            children({
+                                handleOpen = () =>
+                                {
+
+                                }
+                            })
+                        }
                     </View>
                     <PressableText
                         onPress={() => setIsModalVisible(false)}
