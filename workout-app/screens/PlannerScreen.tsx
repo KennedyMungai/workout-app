@@ -14,7 +14,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 {
     const [seqItems, setSeqItems] = useState<SequenceItem[]>([])
 
-    const handleFormSubmit = (form: ExerciseFormData) =>
+    const handleExerciseSubmit = (form: ExerciseFormData) =>
     {
         const sequenceItem: SequenceItem = {
             slug: slugify(form.name + " " + Date.now(), { lower: true }),
