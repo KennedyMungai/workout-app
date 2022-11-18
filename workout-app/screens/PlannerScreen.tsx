@@ -38,6 +38,8 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
             name: form.name,
             slug: slugify(form.name + " " + Date.now(), { lower: true }),
         }
+
+        console.log(workout)
     }
 
     return (
