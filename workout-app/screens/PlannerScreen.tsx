@@ -8,6 +8,7 @@ import Modal from "../components/styled/Modal";
 import { PressableText } from "../components/styled/PressableText";
 import WorkoutForm from "../components/WorkoutForm";
 import { SequenceItem, SequenceType } from "../types/data";
+import { WorkoutFormData } from '../components/WorkoutForm';
 
 
 export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
@@ -29,6 +30,11 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
         }
 
         setSeqItems([...seqItems, sequenceItem])
+    }
+
+    const handleWorkoutSubmit = (form: WorkoutFormData) => 
+    {
+
     }
 
     return (
