@@ -32,7 +32,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
         setSeqItems([...seqItems, sequenceItem])
     }
 
-    const computeDifficulty = () =>
+    const computeDifficulty = (exercisesCount: number, duration: number) =>
     {
 
     }
