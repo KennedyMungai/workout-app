@@ -63,7 +63,7 @@ const handleWorkoutSubmit = (form: WorkoutFormData) =>
             name: form.name,
             slug: slugify(form.name + " " + Date.now(), { lower: true }),
             duration: duration,
-            difficulty: "easy",
+            difficulty: computeDifficulty(seqItems.length, duration),
             sequence: [...seqItems],
         }
 
