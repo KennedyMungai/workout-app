@@ -3,6 +3,7 @@ import { useState } from "react";
 import { View, StyleSheet, FlatList, Text } from "react-native";
 import slugify from "slugify";
 import ExerciseForm, { ExerciseFormData } from '../components/ExerciseForm';
+import ExerciseItem from "../components/ExerciseItem";
 import { SequenceItem, SequenceType } from "../types/data";
 
 
@@ -32,11 +33,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
             <FlatList
                 data={seqItems}
                 keyExtractor={item => item.slug}
-                renderItem={({ item }) =>
-                    <Text>
-                        {item.name}
-                    </Text>
-                }
+                renderItem={ExerciseItem}
             />
             <ExerciseForm
                 onSubmit={handleFormSubmit}
