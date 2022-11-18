@@ -55,7 +55,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
             <View>
                 <DefaultModal>
                     <Text>
-
+                        Here will be my simple form
                     </Text>
                 </DefaultModal>
             </View>
