@@ -34,12 +34,23 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 
     const handleWorkoutSubmit = (form: WorkoutFormData) => 
     {
-        const workout: WorkOut = {
-            name: form.name,
-            slug: slugify(form.name + " " + Date.now(), { lower: true }),
-        }
+        const duration = seqItems.reduce((acc, item) =>
+        {
+            return acc + item.duration
+        }, 0)
 
-        console.log(workout)
+        if (seqItems.length > 0)
+        {
+            const workout: WorkOut = {
+                name: form.name,
+                slug: slugify(form.name + " " + Date.now(), { lower: true }),
+                duration: duration,
+                difficulty: "easy",
+                sequence: [...seqItems],
+            }
+
+            console.log(workout)
+        }
     }
 
     return (
