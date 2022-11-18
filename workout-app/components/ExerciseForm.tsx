@@ -27,9 +27,6 @@ const ExerciseForm = ({
 
     return (
         <View style={styles.container}>
-            <Text>
-                Exercise Form
-            </Text>
             <View>
                 <View style={styles.rowContainer}>
                     <Controller
