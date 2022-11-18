@@ -54,10 +54,12 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
             />
             <View>
                 <Modal
-                    activator={() =>
-                    {
-
-                    }}
+                    activator={({ handleOpen }) =>
+                        <PressableText
+                            text={"Create Workout"}
+                            onPress={handleOpen}
+                        />
+                    }
                 >
                     <Text>
                         Here will be my simple form
