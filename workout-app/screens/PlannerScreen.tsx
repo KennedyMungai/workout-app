@@ -32,6 +32,11 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
         setSeqItems([...seqItems, sequenceItem])
     }
 
+    const computeDifficulty = () =>
+    {
+
+    }
+
     const handleWorkoutSubmit = (form: WorkoutFormData) => 
     {
         const duration = seqItems.reduce((acc, item) =>
