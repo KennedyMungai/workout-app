@@ -115,6 +115,7 @@ const ExerciseForm = ({
                     />
                 </View>
                 <PressableText
+                    style={{ marginTop: 20 }}
                     text="Submit"
                     onPress={handleSubmit((data) =>
                     {
