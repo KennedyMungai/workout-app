@@ -34,7 +34,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 
     const handleWorkoutSubmit = (form: WorkoutFormData) => 
     {
-
+        console.log(form)
     }
 
     return (
