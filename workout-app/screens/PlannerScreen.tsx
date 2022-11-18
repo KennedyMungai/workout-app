@@ -40,70 +40,78 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
         {
             return "hard"
         }
-    }
-
-    const handleWorkoutSubmit = (form: WorkoutFormData) => 
+        else if (intensity < = 100)
+        {
+            return "normal"
+        } 
+        else
     {
-        const duration = seqItems.reduce((acc, item) =>
-        {
-            return acc + item.duration
-        }, 0)
-
-        if (seqItems.length > 0)
-        {
-            const workout: WorkOut = {
-                name: form.name,
-                slug: slugify(form.name + " " + Date.now(), { lower: true }),
-                duration: duration,
-                difficulty: "easy",
-                sequence: [...seqItems],
-            }
-
-            console.log(workout)
-        }
+        return "easy"
     }
+}
 
-    return (
-        <View style={styles.container}>
-            <FlatList
-                data={seqItems}
-                keyExtractor={item => item.slug}
-                renderItem={({ item, index }) =>
-                    <ExerciseItem item={item}>
-                        <PressableText
-                            text="Remove"
-                            onPressIn={() =>
-                            {
-                                const items = [...seqItems]
-                                items.splice(index, 1)
-                                setSeqItems(items)
-                            }}
-                        />
-                    </ExerciseItem>
+const handleWorkoutSubmit = (form: WorkoutFormData) => 
+{
+    const duration = seqItems.reduce((acc, item) =>
+    {
+        return acc + item.duration
+    }, 0)
+
+    if (seqItems.length > 0)
+    {
+        const workout: WorkOut = {
+            name: form.name,
+            slug: slugify(form.name + " " + Date.now(), { lower: true }),
+            duration: duration,
+            difficulty: "easy",
+            sequence: [...seqItems],
+        }
+
+        console.log(workout)
+    }
+}
+
+return (
+    <View style={styles.container}>
+        <FlatList
+            data={seqItems}
+            keyExtractor={item => item.slug}
+            renderItem={({ item, index }) =>
+                <ExerciseItem item={item}>
+                    <PressableText
+                        text="Remove"
+                        onPressIn={() =>
+                        {
+                            const items = [...seqItems]
+                            items.splice(index, 1)
+                            setSeqItems(items)
+                        }}
+                    />
+                </ExerciseItem>
+            }
+        />
+        <ExerciseForm
+            onSubmit={handleExerciseSubmit}
+        />
+        <View>
+            <Modal
+                activator={({ handleOpen }) =>
+                    <PressableText
+                        style={{ marginTop: 15 }}
+                        text={"Create Workout"}
+                        onPress={handleOpen}
+                    />
                 }
-            />
-            <ExerciseForm
-                onSubmit={handleExerciseSubmit}
-            />
-            <View>
-                <Modal
-                    activator={({ handleOpen }) =>
-                        <PressableText
-                            style={{ marginTop: 15 }}
-                            text={"Create Workout"}
-                            onPress={handleOpen}
-                        />
-                    }
-                >
-                    <Text>
-                        <WorkoutForm
-                            onSubmit={handleWorkoutSubmit}
-                        />
-                    </Text>
-                </Modal>
-            </View>
+            >
+                <Text>
+                    <WorkoutForm
+                        onSubmit={handleWorkoutSubmit}
+                    />
+                </Text>
+            </Modal>
         </View>
-    );
+    </View>
+);
 };
 
 const styles = StyleSheet.create({
