@@ -56,6 +56,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
                 <Modal
                     activator={({ handleOpen }) =>
                         <PressableText
+                            style={{ marginTop: 15 }}
                             text={"Create Workout"}
                             onPress={handleOpen}
                         />
