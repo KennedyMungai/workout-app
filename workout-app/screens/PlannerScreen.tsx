@@ -6,6 +6,7 @@ import ExerciseForm, { ExerciseFormData } from '../components/ExerciseForm';
 import ExerciseItem from "../components/ExerciseItem";
 import Modal from "../components/styled/Modal";
 import { PressableText } from "../components/styled/PressableText";
+import WorkoutForm from "../components/WorkoutForm";
 import { SequenceItem, SequenceType } from "../types/data";
 
 
@@ -63,7 +64,12 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
                     }
                 >
                     <Text>
-                        Here will be my simple form
+                        <WorkoutForm
+                            onSubmit={(data) =>
+                            {
+                                console.log(data)
+                            }}
+                        />
                     </Text>
                 </Modal>
             </View>
