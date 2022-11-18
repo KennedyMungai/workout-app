@@ -51,7 +51,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
                 }
             />
             <ExerciseForm
-                onSubmit={handleFormSubmit}
+                onSubmit={handleExerciseSubmit}
             />
             <View>
                 <Modal
