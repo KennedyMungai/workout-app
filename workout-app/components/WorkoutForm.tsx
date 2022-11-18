@@ -31,6 +31,7 @@ const WorkoutForm = ({
                         onChangeText={onChange}
                         value={value}
                         placeholder="Workout Name"
+                        placeholderTextColor={"rgba(0,0,0,0.5)"}
                         style={styles.input}
                     />
                 }
