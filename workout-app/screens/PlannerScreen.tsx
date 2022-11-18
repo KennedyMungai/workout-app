@@ -29,9 +29,6 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 
     return (
         <View style={styles.container}>
-            <ExerciseForm
-                onSubmit={handleFormSubmit}
-            />
             <FlatList
                 data={seqItems}
                 keyExtractor={item => item.slug}
@@ -40,6 +37,9 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
                         {item.name}
                     </Text>
                 }
+            />
+            <ExerciseForm
+                onSubmit={handleFormSubmit}
             />
         </View>
     );
