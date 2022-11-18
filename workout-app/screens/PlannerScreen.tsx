@@ -34,7 +34,12 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 
     const computeDifficulty = (exercisesCount: number, workoutDuration: number) =>
     {
-        const difficulty = workoutDuration / exercisesCount
+        const intensity = workoutDuration / exercisesCount
+
+        if (intensity < 60)
+        {
+            return "hard"
+        }
     }
 
     const handleWorkoutSubmit = (form: WorkoutFormData) => 
