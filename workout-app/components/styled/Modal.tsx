@@ -35,7 +35,7 @@ const Modal = ({
                         }
                     </View>
                     <PressableText
-                        onPress={() => setIsModalVisible(false)}
+                        onPress={handleClose}
                         text="Close Modal"
                     />
                 </View>
