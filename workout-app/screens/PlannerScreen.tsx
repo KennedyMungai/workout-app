@@ -71,10 +71,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
                 >
                     <Text>
                         <WorkoutForm
-                            onSubmit={(data) =>
-                            {
-                                console.log(data)
-                            }}
+                            onSubmit={handleWorkoutSubmit}
                         />
                     </Text>
                 </Modal>
