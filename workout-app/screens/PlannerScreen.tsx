@@ -1,4 +1,5 @@
 import { NativeStackHeaderProps } from "@react-navigation/native-stack";
+import { useState } from "react";
 import { View, StyleSheet } from "react-native";
 import slugify from "slugify";
 import ExerciseForm, { ExerciseFormData } from '../components/ExerciseForm';
@@ -7,6 +8,8 @@ import { SequenceItem, SequenceType } from "../types/data";
 
 export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
 {
+    const [seqItems, setSeqItems] = useState<SequenceItem[]>([])
+
     const handleFormSubmit = (form: ExerciseFormData) =>
     {
         const sequenceItem: SequenceItem = {
