@@ -35,6 +35,14 @@ const WorkoutForm = ({
                     />
                 }
             />
+            <PressableText
+                style={{ marginTop: 10 }}
+                text="Add Exercise"
+                onPress={handleSubmit((data) =>
+                {
+                    onSubmit(data as WorkoutFormData)
+                })}
+            />
         </View>
     )
 }
