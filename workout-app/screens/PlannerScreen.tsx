@@ -1,6 +1,6 @@
 import { NativeStackHeaderProps } from "@react-navigation/native-stack";
 import { useState } from "react";
-import { View, StyleSheet, FlatList, Modal as DefaultModal, Text } from 'react-native';
+import { View, StyleSheet, FlatList, Text } from 'react-native';
 import slugify from "slugify";
 import ExerciseForm, { ExerciseFormData } from '../components/ExerciseForm';
 import ExerciseItem from "../components/ExerciseItem";
@@ -53,11 +53,16 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
                 onSubmit={handleFormSubmit}
             />
             <View>
-                <DefaultModal>
+                <Modal
+                    activator={() =>
+                    {
+
+                    }}
+                >
                     <Text>
                         Here will be my simple form
                     </Text>
-                </DefaultModal>
+                </Modal>
             </View>
         </View>
     );
