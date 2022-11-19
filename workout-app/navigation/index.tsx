@@ -5,9 +5,10 @@ import HomeScreen from "../screens/HomeScreen";
 import PlannerScreen from "../screens/PlannerScreen";
 import { FontAwesome } from "@expo/vector-icons";
 import WorkoutDetailScreen from "../screens/WorkoutDetailScreen";
+import { ColorSchemeName } from "react-native";
 
 
-export default function Navigation()
+export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName })
 {
     return (
         <NavigationContainer theme={DarkTheme}>
