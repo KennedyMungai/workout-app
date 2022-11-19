@@ -112,6 +112,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
                                     {
                                         handleWorkoutSubmit(data)
                                         handleClose()
+                                        navigation.navigate("Home")
                                     }}
                                 />
                             </Text>
