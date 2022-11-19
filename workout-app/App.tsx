@@ -9,6 +9,8 @@ export default function App()
   const isLoaded = useCachedResources();
   console.log(isLoaded);
 
+  const theme = useColorScheme()
+
   if (isLoaded)
   {
     return (
