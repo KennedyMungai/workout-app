@@ -9,13 +9,13 @@ export default function App()
   const isLoaded = useCachedResources();
   console.log(isLoaded);
 
-  const theme = useColorScheme()
+  const colorScheme = useColorScheme()
 
   if (isLoaded)
   {
     return (
       <>
-        <Navigation colorScheme={theme} />
+        <Navigation colorScheme={colorScheme} />
         <StatusBar style="auto" />
       </>
     );
