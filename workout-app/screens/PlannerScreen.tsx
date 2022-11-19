@@ -9,6 +9,7 @@ import { PressableText } from "../components/styled/PressableText";
 import WorkoutForm from "../components/WorkoutForm";
 import { SequenceItem, SequenceType, WorkOut } from "../types/data";
 import { WorkoutFormData } from '../components/WorkoutForm';
+import { storeWorkout } from "../storage/workout";
 
 
 export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
@@ -67,7 +68,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
                 sequence: [...seqItems],
             }
 
-            console.log(workout)
+            storeWorkout(workout)
         }
     }
 
