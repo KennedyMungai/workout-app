@@ -9,6 +9,7 @@ const ThemeText = (props: Text["props"]) =>
     return (
         <Text
             {...props}
+            style={[props.style, { color }]}
         />
     )
 }
