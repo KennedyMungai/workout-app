@@ -40,6 +40,7 @@ const ExerciseForm = ({
                                 onChangeText={onChange}
                                 value={value}
                                 placeholder="Name"
+                                placeholderTextColor={"rgba(0,0,0,0.5)"}
                                 style={styles.input}
                             />
                         }
@@ -55,6 +56,7 @@ const ExerciseForm = ({
                                 onChangeText={onChange}
                                 value={value}
                                 placeholder="Duration"
+                                placeholderTextColor={"rgba(0,0,0,0.5)"}
                                 style={styles.input}
                             />
                         }
@@ -72,6 +74,7 @@ const ExerciseForm = ({
                                 onChangeText={onChange}
                                 value={value}
                                 placeholder="Repetitions"
+                                placeholderTextColor={"rgba(0,0,0,0.5)"}
                                 style={styles.input}
                             />
                         }
@@ -106,6 +109,7 @@ const ExerciseForm = ({
                                         <TextInput
                                             onPressIn={() => setIsSelectionOn(true)}
                                             placeholder="Type"
+                                            placeholderTextColor={"rgba(0,0,0,0.5)"}
                                             style={styles.input}
                                             value={value}
                                         />
