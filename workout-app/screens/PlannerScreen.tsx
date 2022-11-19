@@ -10,6 +10,7 @@ import WorkoutForm from "../components/WorkoutForm";
 import { SequenceItem, SequenceType, WorkOut } from "../types/data";
 import { WorkoutFormData } from '../components/WorkoutForm';
 import { storeWorkout } from "../storage/workout";
+import PressableThemeText from '../components/styled/PressableThemeText';
 
 
 export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
@@ -97,7 +98,7 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
             <View>
                 <Modal
                     activator={({ handleOpen }) =>
-                        <PressableText
+                        <PressableThemeText
                             style={{ marginTop: 15 }}
                             text={"Create Workout"}
                             onPress={handleOpen}
