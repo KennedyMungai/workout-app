@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import Navigation from './navigation';
 import useCachedResources from './hooks/useCachedResources';
+import { useColorScheme } from 'react-native';
 
 
 export default function App()
