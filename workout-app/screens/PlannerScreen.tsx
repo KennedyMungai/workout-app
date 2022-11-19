@@ -108,9 +108,9 @@ export default function PlannerScreen({ navigation }: NativeStackHeaderProps)
                         ({ handleClose }) =>
                             <Text>
                                 <WorkoutForm
-                                    onSubmit={(data) =>
+                                    onSubmit={async (data) =>
                                     {
-                                        handleWorkoutSubmit(data)
+                                        await handleWorkoutSubmit(data)
                                         handleClose()
                                         navigation.navigate("Home")
                                     }}
