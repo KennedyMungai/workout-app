@@ -10,7 +10,7 @@ export const PressableText = (props: PressableTextProps) =>
             {...props}
         >
             <Text
-                style={{ textDecorationLine: "underline" }}
+                style={[props.style, { textDecorationLine: "underline" }]}
             >
                 {props.text}
             </Text>
