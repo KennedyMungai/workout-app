@@ -8,7 +8,7 @@ const ThemeText = (props: Text["props"]) =>
 
     return (
         <Text
-
+            {...props}
         />
     )
 }
