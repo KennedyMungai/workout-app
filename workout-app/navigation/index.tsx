@@ -46,6 +46,7 @@ function BottomTabNavigator()
                 name="Planner"
                 component={PlannerScreen}
                 options={{
+                    unmountOnBlur: true,
                     tabBarIcon: ({ color, size }) => <FontAwesome name="list" size={size} color={color} />
                 }}
             />
