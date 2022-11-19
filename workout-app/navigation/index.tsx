@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { DarkTheme, NavigationContainer } from "@react-navigation/native";
+import { DarkTheme, DefaultTheme, NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../screens/HomeScreen";
 import PlannerScreen from "../screens/PlannerScreen";
@@ -11,7 +11,9 @@ import { ColorSchemeName } from "react-native";
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName })
 {
     return (
-        <NavigationContainer theme={DarkTheme}>
+        <NavigationContainer
+            theme={colorScheme === "light" ? DefaultTheme : DarkTheme}
+        >
             <RootNavigator />
         </NavigationContainer>
     );
