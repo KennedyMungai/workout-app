@@ -11,6 +11,8 @@ export default function App()
 
   const theme = useColorScheme()
 
+  console.log(theme)
+
   if (isLoaded)
   {
     return (
