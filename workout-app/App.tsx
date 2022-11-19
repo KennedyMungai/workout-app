@@ -15,7 +15,7 @@ export default function App()
   {
     return (
       <>
-        <Navigation />
+        <Navigation colorScheme={theme} />
         <StatusBar style="auto" />
       </>
     );
