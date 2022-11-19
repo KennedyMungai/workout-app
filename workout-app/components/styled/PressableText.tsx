@@ -1,7 +1,9 @@
 import React from "react"
 import { Pressable, PressableProps, Text } from "react-native"
 
-export const PressableText = (props: PressableProps & { text: string }) =>
+export type PressableTextProps = PressableProps & { text: string }
+
+export const PressableText = (props: PressableTextProps) =>
 {
     return (
         <Pressable
